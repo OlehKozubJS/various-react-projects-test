@@ -5,5 +5,8 @@ const htmlRoot = document.getElementById("root");
 const reactRoot = createRoot(htmlRoot);
 
 reactRoot.render(
-  <StrictMode>Hello! I am VioletFox! Progress Wins Again!</StrictMode>
+  <StrictMode>
+    Hello!{<br />} I am VioletFox!{<br />} Progress Wins Again!{<br />}
+    Keroberos
+  </StrictMode>
 );
