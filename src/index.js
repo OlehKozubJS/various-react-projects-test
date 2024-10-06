@@ -4,4 +4,4 @@ import { createRoot } from "react-dom";
 const htmlRoot = document.getElementById("root");
 const reactRoot = createRoot(htmlRoot);
 
-reactRoot.render(<StrictMode>Hello!</StrictMode>);
+reactRoot.render(<StrictMode>Hello! I am VioletFox!</StrictMode>);
