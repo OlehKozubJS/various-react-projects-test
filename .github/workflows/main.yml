@@ -1,21 +1,23 @@
-name: build-and-publish
-run-name: I am learning GitHub Actions
+name: Build and deploy to GitHub Pages
+
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Build the app
-        run: npm run build
+      - name: Install, build
+        run: |
+          npm install
+          npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@4
         with:
+          branch: gh-pages
           folder: build
-        
