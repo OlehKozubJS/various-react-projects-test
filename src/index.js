@@ -6,7 +6,12 @@ const reactRoot = createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
-    Hello!{<br />} I am VioletFox!{<br />} Progress Wins Again!{<br />}
+    Hello!
+    <br />
+    I am VioletFox!
+    <br />
+    Progress Wins Again!
+    <br />
     Keroberos
   </StrictMode>
 );
