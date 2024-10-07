@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/profound-svg-graphics-test/static/js/main.8605cde8.js",
+    "main.js": "/profound-svg-graphics-test/static/js/main.d15e316d.js",
     "index.html": "/profound-svg-graphics-test/index.html",
-    "main.8605cde8.js.map": "/profound-svg-graphics-test/static/js/main.8605cde8.js.map"
+    "main.d15e316d.js.map": "/profound-svg-graphics-test/static/js/main.d15e316d.js.map"
   },
   "entrypoints": [
-    "static/js/main.8605cde8.js"
+    "static/js/main.d15e316d.js"
   ]
 }
