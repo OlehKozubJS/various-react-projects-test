@@ -15,10 +15,16 @@ const App = () => {
         style={{
           width: "300px",
           height: "300px",
-          backgroundColor: "rgb(200, 150, 250)",
+          backgroundColor: "rgb(240, 230, 250)",
         }}
       >
-        <LineString x1={10} y1={20} x2={30} y2={40}></LineString>
+        <LineString
+          x1={10}
+          y1={20}
+          x2={130}
+          y2={40}
+          stroke={"rgb(250, 150, 200)"}
+        ></LineString>
       </svg>
     </>
   );
