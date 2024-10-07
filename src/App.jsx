@@ -17,8 +17,9 @@ const App = () => {
           height: "300px",
           backgroundColor: "rgb(200, 150, 250)",
         }}
-      ></svg>
-      <LineString x1></LineString>
+      >
+        <LineString x1={10} y1={20} x2={30} y2={40}></LineString>
+      </svg>
     </>
   );
 };
