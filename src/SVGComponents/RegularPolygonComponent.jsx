@@ -1,7 +1,7 @@
 const RegularPolygonComponent = ({
   x,
   y,
-  l,
+  length,
   angleNumber,
   angle,
   backgroundColor,
@@ -9,11 +9,9 @@ const RegularPolygonComponent = ({
 }) => {
   var polygonArray = [];
   for (aa = 1; aa <= angleNumber; ++aa) {
-    var xy = angleFunction(x, y, l, (360 / angleNumber) * aa + angle);
+    var xy = angleFunction(x, y, length, (360 / angleNumber) * aa + angle);
     polygonArray.push(xy);
   }
-  var polygonString =
-    "<polygon points='" + polygonArray.join(",") + "'></polygon>";
 
   return (
     <LineComponent
