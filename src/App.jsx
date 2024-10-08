@@ -18,10 +18,10 @@ const App = () => {
           borderColor={"red"}
         />
         <RadiantLineComponent
-          x={250}
-          y={165}
-          length={25}
-          angle={70}
+          x={150}
+          y={65}
+          length={125}
+          angle={10}
           backgroundColor={"none"}
           borderColor={"rgb(200, 180, 120)"}
         />
