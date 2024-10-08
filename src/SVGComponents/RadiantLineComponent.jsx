@@ -1,6 +1,12 @@
 import { LineComponent } from "./LineComponent";
 
-const RadiantLineComponent = ({ x, y, backgroundColor, borderColor }) => {
+const RadiantLineComponent = ({
+  x,
+  y,
+  length,
+  backgroundColor,
+  borderColor,
+}) => {
   const sinFunc = (angle) => {
     return Math.sin((Math.PI / 180) * angle);
   };
@@ -18,11 +24,11 @@ const RadiantLineComponent = ({ x, y, backgroundColor, borderColor }) => {
       points={[
         x,
         y,
-        angleFunction(x, y, l, angle)[0],
-        angleFunction(x, y, l, angle)[1],
+        angleFunction(x, y, length, angle)[0],
+        angleFunction(x, y, length, angle)[1],
       ]}
-      backgroundColor
-      borderColor
+      backgroundColor={backgroundColor}
+      borderColor={borderColor}
     />
   );
 };
