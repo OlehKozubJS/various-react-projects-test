@@ -56,6 +56,3 @@ const App = () => {
 };
 
 export { App };
-/**
- *
- */
