@@ -2,6 +2,8 @@ import {
   SVGFieldComponent,
   LineComponent,
   RadiantLineComponent,
+  RegularPolygonComponent,
+  TurtleComponent,
 } from "./SVGComponents";
 
 const App = () => {
