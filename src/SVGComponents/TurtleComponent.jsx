@@ -2,7 +2,7 @@ import { angleFunction } from "./angleFunctions";
 
 import { LineComponent } from "./LineComponent";
 
-const TurtleComponent = (x, y, turn, backgroundColor, borderColor) => {
+const TurtleComponent = ({ x, y, turn, backgroundColor, borderColor }) => {
   return (
     <LineComponent
       points={[
