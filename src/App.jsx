@@ -1,9 +1,13 @@
-import { LineComponent } from "./SVGComponents/LineComponent";
+import {
+  SVGFieldComponent,
+  LineComponent,
+  RadiantLineComponent,
+} from "./SVGComponents";
 
 const App = () => {
   return (
     <>
-      <svg
+      <SVGFieldComponent
         style={{
           width: "300px",
           height: "300px",
@@ -15,7 +19,7 @@ const App = () => {
           backgroundColor={"none"}
           borderColor={"red"}
         />
-      </svg>
+      </SVGFieldComponent>
     </>
   );
 };
