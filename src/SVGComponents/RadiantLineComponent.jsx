@@ -17,7 +17,7 @@ const RadiantLineComponent = ({
   };
 
   function angleFunction(x, y, length, angle) {
-    return [x + length * cosFunc(angle), y + l * sinFunc(angle)];
+    return [x + length * cosFunc(angle), y + length * sinFunc(angle)];
   }
 
   return (
