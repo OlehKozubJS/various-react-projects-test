@@ -15,17 +15,12 @@ const RegularPolygonComponent = ({
 
   for (const aa = 1; aa <= angleNumber; ++aa) {
     const xy = angleFunction(x, y, length, (360 / angleNumber) * aa + angle);
-    polygonArray.push(xy);
+    polygonArray = [...polygonArray, ...xy];
   }
 
   return (
     <LineComponent
-      points={[
-        x,
-        y,
-        angleFunction(x, y, length, angle)[0],
-        angleFunction(x, y, length, angle)[1],
-      ]}
+      points={polygonArray}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
     />
