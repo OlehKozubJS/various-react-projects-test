@@ -13,8 +13,17 @@ const RegularPolygonComponent = ({
 }) => {
   let polygonArray = [];
 
-  for (let aa = 1; aa <= angleNumber + 1; ++aa) {
-    const xy = angleFunction(x, y, length, (360 / angleNumber) * aa + angle);
+  for (
+    let amountOfSides = 1;
+    amountOfSides <= angleNumber + 1;
+    ++amountOfSides
+  ) {
+    const xy = angleFunction(
+      x,
+      y,
+      length,
+      (360 / angleNumber) * amountOfSides + angle
+    );
     polygonArray = [...polygonArray, ...xy];
   }
 
