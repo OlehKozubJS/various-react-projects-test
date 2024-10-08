@@ -11,9 +11,9 @@ const RegularPolygonComponent = ({
   backgroundColor,
   borderColor,
 }) => {
-  const polygonArray = [];
+  let polygonArray = [];
 
-  for (const aa = 1; aa <= angleNumber; ++aa) {
+  for (let aa = 1; aa <= angleNumber; ++aa) {
     const xy = angleFunction(x, y, length, (360 / angleNumber) * aa + angle);
     polygonArray = [...polygonArray, ...xy];
   }
