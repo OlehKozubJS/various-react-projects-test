@@ -1,3 +1,7 @@
+import { angleFunction } from "./angleFunctions";
+
+import { LineComponent } from "./LineComponent";
+
 const RegularPolygonComponent = ({
   x,
   y,
@@ -9,7 +13,7 @@ const RegularPolygonComponent = ({
 }) => {
   const polygonArray = [];
 
-  for (aa = 1; aa <= angleNumber; ++aa) {
+  for (const aa = 1; aa <= angleNumber; ++aa) {
     const xy = angleFunction(x, y, length, (360 / angleNumber) * aa + angle);
     polygonArray.push(xy);
   }
