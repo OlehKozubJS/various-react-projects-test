@@ -1,18 +1,12 @@
-const SVGFieldComponent = () => {
+const SVGFieldComponent = ({ width, height, backgroundColor }) => {
   return (
     <svg
       style={{
-        width: "300px",
-        height: "300px",
-        backgroundColor: "rgb(240, 230, 250)",
+        width,
+        height,
+        backgroundColor,
       }}
-    >
-      <LineComponent
-        points={[0, 0, 50, 50, 100, 50]}
-        backgroundColor={"none"}
-        borderColor={"red"}
-      />
-    </svg>
+    ></svg>
   );
 };
 
