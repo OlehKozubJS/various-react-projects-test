@@ -31,8 +31,8 @@ const App = () => {
           x={150}
           y={150}
           length={85}
-          angle={30}
-          angleNumber={10}
+          angle={40}
+          angleNumber={3}
           backgroundColor={"cyan"}
           borderColor={"rgb(200, 100, 180)"}
         />
