@@ -27,6 +27,10 @@ const App = () => {
           backgroundColor={"none"}
           borderColor={"rgb(200, 180, 120)"}
         />
+        <RegularPolygonComponent
+          backgroundColor={"cyan"}
+          borderColor={"rgb(200, 100, 180)"}
+        />
       </SVGFieldComponent>
     </>
   );
