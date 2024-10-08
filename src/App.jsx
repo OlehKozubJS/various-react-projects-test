@@ -1,4 +1,4 @@
-import { LineString } from "./SVGComponents/RadiantLineComponent";
+import { LineComponent } from "./SVGComponents/RadiantLineComponent";
 
 const App = () => {
   return (
