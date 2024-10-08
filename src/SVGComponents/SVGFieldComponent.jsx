@@ -1,4 +1,4 @@
-const SVGFieldComponent = ({ width, height, backgroundColor }) => {
+const SVGFieldComponent = ({ children, width, height, backgroundColor }) => {
   return (
     <svg
       style={{
@@ -6,7 +6,9 @@ const SVGFieldComponent = ({ width, height, backgroundColor }) => {
         height,
         backgroundColor,
       }}
-    ></svg>
+    >
+      {children}
+    </svg>
   );
 };
 
