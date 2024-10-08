@@ -14,18 +14,6 @@ const RegularPolygonComponent = ({
   }
   var polygonString =
     "<polygon points='" + polygonArray.join(",") + "'></polygon>";
-  return polygonString;
-  const sinFunc = (angle) => {
-    return Math.sin((Math.PI / 180) * angle);
-  };
-
-  const cosFunc = (angle) => {
-    return Math.cos((Math.PI / 180) * angle);
-  };
-
-  function angleFunction(x, y, length, angle) {
-    return [x + length * cosFunc(angle), y + l * sinFunc(angle)];
-  }
 
   return (
     <LineComponent
