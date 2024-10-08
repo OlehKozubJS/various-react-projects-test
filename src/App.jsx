@@ -46,11 +46,6 @@ const App = () => {
           borderColor={"rgb(30, 30, 70)"}
         />
       </SVGFieldComponent>
-      {[
-        ...angleFunction(215, 230, 10, -90 + 60),
-        ...angleFunction(215, 230, 30, 60),
-        ...angleFunction(215, 230, 10, 90 + 60),
-      ].join(" ")}
     </>
   );
 };
