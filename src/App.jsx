@@ -12,7 +12,8 @@ const App = () => {
       >
         <LineComponent
           points={[0, 0, 50, 50, 100, 50]}
-          color={"rgb(120, 0, 240)"}
+          backgroundColor={"none"}
+          borderColor={"red"}
         />
       </svg>
     </>
