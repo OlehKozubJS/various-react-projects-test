@@ -17,6 +17,14 @@ const App = () => {
           backgroundColor={"none"}
           borderColor={"red"}
         />
+        <RadiantLineComponent
+          x={250}
+          y={165}
+          length={100}
+          angle={60}
+          backgroundColor={"none"}
+          borderColor={"rgb(200, 180, 120)"}
+        />
       </SVGFieldComponent>
     </>
   );
