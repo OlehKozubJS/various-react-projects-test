@@ -10,4 +10,4 @@ const SVGFieldComponent = ({ width, height, backgroundColor }) => {
   );
 };
 
-export { App };
+export { SVGFieldComponent };
