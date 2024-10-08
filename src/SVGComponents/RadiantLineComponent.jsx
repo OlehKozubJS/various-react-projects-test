@@ -4,6 +4,7 @@ const RadiantLineComponent = ({
   x,
   y,
   length,
+  angle,
   backgroundColor,
   borderColor,
 }) => {
