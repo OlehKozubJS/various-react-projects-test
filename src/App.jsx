@@ -45,15 +45,6 @@ const App = () => {
           backgroundColor={"rgb(60, 60, 70)"}
           borderColor={"rgb(30, 30, 70)"}
         />
-        <LineComponent
-          points={[
-            ...angleFunction(215, 230, 10, -90 + 60),
-            ...angleFunction(215, 230, 30, 60),
-            ...angleFunction(215, 230, 10, 90 + 60),
-          ]}
-          backgroundColor={"rgb(60, 60, 70)"}
-          borderColor={"rgb(30, 30, 70)"}
-        />
       </SVGFieldComponent>
       {[
         ...angleFunction(215, 230, 10, -90 + 60),
