@@ -1,16 +1,8 @@
-import { LineString } from "./LineString";
+import { LineString } from "./SVGComponents/RadiantLineComponent";
 
 const App = () => {
   return (
     <>
-      Hello!
-      <br />
-      I am VioletFox!
-      <br />
-      Progress Wins Again!
-      <br />
-      Keroberos
-      <br />
       <svg
         style={{
           width: "300px",
