@@ -1,5 +1,5 @@
 import { SVGFieldComponent } from "./SVGFieldComponent";
 import { LineComponent } from "./LineComponent";
-//import {} from "./RadiantLineComponent";
+import { RadiantLineComponent } from "./RadiantLineComponent";
 
-export { SVGFieldComponent, LineComponent };
+export { SVGFieldComponent, LineComponent, RadiantLineComponent };
