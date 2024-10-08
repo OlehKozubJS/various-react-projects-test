@@ -7,9 +7,10 @@ const RegularPolygonComponent = ({
   backgroundColor,
   borderColor,
 }) => {
-  var polygonArray = [];
+  const polygonArray = [];
+
   for (aa = 1; aa <= angleNumber; ++aa) {
-    var xy = angleFunction(x, y, length, (360 / angleNumber) * aa + angle);
+    const xy = angleFunction(x, y, length, (360 / angleNumber) * aa + angle);
     polygonArray.push(xy);
   }
 
