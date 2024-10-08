@@ -38,20 +38,9 @@ const App = () => {
           backgroundColor={"cyan"}
           borderColor={"rgb(200, 100, 180)"}
         />
-        <TurtleComponent
-          x={215}
-          y={230}
-          turn={60}
-          backgroundColor={"rgb(60, 60, 70)"}
-          borderColor={"rgb(30, 30, 70)"}
-        />
       </SVGFieldComponent>
       <LineComponent
-        points={[
-          ...angleFunction(215, 230, 10, -90 + 60),
-          ...angleFunction(215, 230, 30, 60),
-          ...angleFunction(215, 230, 10, 90 + 60),
-        ]}
+        points={[0, 0, 50, 70]}
         backgroundColor={"rgb(60, 60, 70)"}
         borderColor={"rgb(30, 30, 70)"}
       />
@@ -65,3 +54,12 @@ const App = () => {
 };
 
 export { App };
+/**
+ *         <TurtleComponent
+          x={215}
+          y={230}
+          turn={60}
+          backgroundColor={"rgb(60, 60, 70)"}
+          borderColor={"rgb(30, 30, 70)"}
+        />
+ */
