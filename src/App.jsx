@@ -22,12 +22,6 @@ const App = () => {
         height="600px"
         backgroundColor="rgb(240, 230, 250)"
       >
-        <GridComponent
-          fieldHeight={250}
-          fieldWidth={200}
-          cellHeight={20}
-          cellWidth={10}
-        />
         <ReversedTurtleComponent
           x={300}
           y={300}
