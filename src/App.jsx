@@ -2,12 +2,9 @@ import { useState } from "react";
 
 import {
   SVGFieldComponent,
-  LineComponent,
   ReversedTurtleComponent,
-  GridComponent,
-  sinFunc,
-  cosFunc,
   getLengthByXY,
+  getAngleByXY,
 } from "./SVGComponents";
 
 const App = () => {
@@ -15,6 +12,12 @@ const App = () => {
   const [angleValue, setAngleValue] = useState(0);
   const [initialX, setInitialX] = useState(0);
   const [isDraggable, setIsDraggable] = useState(false);
+
+  const getAngle = (event) => {
+    const cursorX = event.target.clientX;
+    const cursorY = event.target.clientY;
+    setAngleValue(getAngleByXY(300, 300, cursorX, cursorY));
+  };
 
   return (
     <>
@@ -31,7 +34,7 @@ const App = () => {
           borderColor={"blue"}
         />
       </SVGFieldComponent>
-      {getLengthByXY(340, 480, 370, 520)}
+      {}
     </>
   );
 };
