@@ -1,4 +1,4 @@
-import { LineComponent } from "./SVGComponents";
+import { LineComponent } from "./LineComponent";
 
 const GridComponent = () => {
   let horizontalCoordinates = [];
