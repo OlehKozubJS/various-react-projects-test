@@ -1,4 +1,4 @@
-import { angleFunction } from "./SVGComponents/angleFunctions";
+import { useState } from "react";
 
 import {
   SVGFieldComponent,
@@ -14,6 +14,10 @@ const App = () => {
   for (let x = 0; x <= 1000; x += 10) {
     horizontalCoordinates = [...horizontalCoordinates, x];
   }
+
+  const [angleValue, setAngleValue] = useState(0);
+  const [initialX, setInitialX] = useState(0);
+  const [isDraggable, setIsDraggable] = useState(0);
 
   return (
     <>
