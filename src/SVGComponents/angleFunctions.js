@@ -20,12 +20,12 @@ const arcCosFunc = (cosine) => {
   return Math.round(Math.acos(cosine) / RADIAN);
 };
 
-const getXYbyAngle = (x, y, length, angle) => {
-  return [x + length * sinFunc(angle), y - length * cosFunc(angle)];
-};
-
 const getLengthByXY = (x1, y1, x2, y2) => {
   return Math.sqrt(square(x2 - x1) + square(y2 - y1));
+};
+
+const getXYbyAngle = (x, y, length, angle) => {
+  return [x + length * sinFunc(angle), y - length * cosFunc(angle)];
 };
 
 export {
