@@ -16,16 +16,17 @@ const App = () => {
   const getAngle = (event) => {
     const cursorX = event.target.clientX;
     const cursorY = event.target.clientY;
-    setAngleValue(getAngleByXY(300, 300, Number(cursorX), Number(cursorY)));
+    setAngleValue(
+      /*getAngleByXY(300, 300, Number(cursorX), Number(cursorY))*/ `${cursorX} ${cursorY}`
+    );
   };
 
   return (
-    <>
+    <div onMouseDown={getAngle}>
       <SVGFieldComponent
         width="600px"
         height="600px"
         backgroundColor="rgb(240, 230, 250)"
-        onMouseDown={getAngle}
       >
         <ReversedTurtleComponent
           x={300}
@@ -36,7 +37,7 @@ const App = () => {
         />
       </SVGFieldComponent>
       {angleValue}
-    </>
+    </div>
   );
 };
 
