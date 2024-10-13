@@ -49,30 +49,6 @@ const App = () => {
           backgroundColor="blue"
           borderColor="red"
         />
-        <RadiantLineComponent
-          x={150}
-          y={150}
-          length={150}
-          angle={0}
-          backgroundColor="none"
-          borderColor="rgb(200, 180, 120)"
-        />
-        <RegularPolygonComponent
-          x={100}
-          y={100}
-          length={25}
-          angle={0}
-          angleNumber={3}
-          backgroundColor="cyan"
-          borderColor="rgb(200, 100, 180)"
-        />
-        <TurtleComponent
-          x={215}
-          y={230}
-          turn={0}
-          backgroundColor="rgb(90, 90, 170)"
-          borderColor="rgb(30, 30, 170)"
-        />
       </SVGFieldComponent>
     </>
   );
