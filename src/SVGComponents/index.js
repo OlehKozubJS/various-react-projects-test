@@ -25,7 +25,7 @@ export {
   sinFunc,
   cosFunc,
   arcSinFunc,
-  arcCosFunc
+  arcCosFunc,
   getLengthByXY,
   getXYbyAngle,
 };
