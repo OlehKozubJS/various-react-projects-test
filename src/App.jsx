@@ -9,18 +9,10 @@ import {
 } from "./SVGComponents";
 
 const App = () => {
-  const horizontalCoordinates = [];
+  let horizontalCoordinates = [];
 
-  for (let x = 0; x <= 300; x += 10) {
-    horizontalCoordinates = [
-      ...horizontalCoordinates,
-      <LineComponent
-        key={x}
-        points={[x, 0, x, 300]}
-        backgroundColor="blue"
-        borderColor="red"
-      />,
-    ];
+  for (let x = 0; x <= 1000; x += 10) {
+    horizontalCoordinates = [...horizontalCoordinates, x];
   }
 
   return (
@@ -30,7 +22,24 @@ const App = () => {
         height="1000px"
         backgroundColor="rgb(240, 230, 250)"
       >
-        {horizontalCoordinates.forEach((item) => {})}
+        {horizontalCoordinates.map((item) => {
+          return (
+            <>
+              <LineComponent
+                key={item}
+                points={[item, 0, item, 1000]}
+                backgroundColor="blue"
+                borderColor="red"
+              />
+              <LineComponent
+                key={item}
+                points={[0, item, 1000, item]}
+                backgroundColor="blue"
+                borderColor="red"
+              />
+            </>
+          );
+        })}
         <LineComponent
           points={[100, 0, 100, 100]}
           backgroundColor="blue"
