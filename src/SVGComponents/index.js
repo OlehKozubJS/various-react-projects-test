@@ -12,6 +12,7 @@ import {
   arcCosFunc,
   getLengthByXY,
   getXYbyAngle,
+  getAngleByXY,
 } from "./angleFunctions";
 
 export {
@@ -28,4 +29,5 @@ export {
   arcCosFunc,
   getLengthByXY,
   getXYbyAngle,
+  getAngleByXY,
 };
