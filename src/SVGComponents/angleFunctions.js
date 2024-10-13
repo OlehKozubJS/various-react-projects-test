@@ -16,8 +16,8 @@ const arcCosFunc = (cosine) => {
   return Math.round(Math.acos(cosine) / RADIAN);
 };
 
-const angleFunction = (x, y, length, angle) => {
+const getXYbyAngle = (x, y, length, angle) => {
   return [x + length * sinFunc(angle), y - length * cosFunc(angle)];
 };
 
-export { sinFunc, cosFunc, arcSinFunc, arcCosFunc, angleFunction };
+export { sinFunc, cosFunc, arcSinFunc, arcCosFunc, getXYbyAngle };
