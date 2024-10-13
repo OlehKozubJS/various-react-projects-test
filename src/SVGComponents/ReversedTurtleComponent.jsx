@@ -1,4 +1,4 @@
-import { angleFunction } from "./angleFunctions";
+import { getXYbyAngle } from "./angleFunctions";
 
 import { LineComponent } from "./LineComponent";
 
@@ -12,10 +12,10 @@ const ReversedTurtleComponent = ({
   return (
     <LineComponent
       points={[
-        ...angleFunction(x, y, 100, -15 + turn),
-        ...angleFunction(x, y, 0, turn),
-        ...angleFunction(x, y, 100, 15 + turn),
-        ...angleFunction(x, y, 100, -15 + turn),
+        ...getXYbyAngle(x, y, 100, -15 + turn),
+        ...getXYbyAngle(x, y, 0, turn),
+        ...getXYbyAngle(x, y, 100, 15 + turn),
+        ...getXYbyAngle(x, y, 100, -15 + turn),
       ]}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
