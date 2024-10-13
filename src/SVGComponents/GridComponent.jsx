@@ -31,4 +31,4 @@ const GridComponent = () => {
   );
 };
 
-export { App };
+export { GridComponent };
