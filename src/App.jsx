@@ -15,7 +15,7 @@ const App = () => {
 
   const [angleValue, setAngleValue] = useState(0);
   const [initialX, setInitialX] = useState(0);
-  const [isDraggable, setIsDraggable] = useState(0);
+  const [isDraggable, setIsDraggable] = useState(false);
 
   return (
     <>
