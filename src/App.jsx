@@ -31,7 +31,7 @@ const App = () => {
           borderColor={"blue"}
         />
       </SVGFieldComponent>
-      {getLengthByXY(34, 48, 64, 88)}
+      {getLengthByXY(34, 48, 37, 52)}
     </>
   );
 };
