@@ -12,12 +12,7 @@ const RadiantLineComponent = ({
 }) => {
   return (
     <LineComponent
-      points={[
-        x,
-        y,
-        angleFunction(x, y, length, angle)[0],
-        angleFunction(x, y, length, angle)[1],
-      ]}
+      points={[x, y, angleFunction(x, y, length, angle)]}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
     />
