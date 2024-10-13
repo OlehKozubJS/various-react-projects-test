@@ -14,7 +14,7 @@ const App = () => {
   for (let x = 0; x <= 1000; x += 10) {
     horizontalCoordinates = [...horizontalCoordinates, x];
   }
-
+  const angle = 0;
   const [angleValue, setAngleValue] = useState(0);
   const [initialX, setInitialX] = useState(0);
   const [isDraggable, setIsDraggable] = useState(false);
@@ -40,7 +40,7 @@ const App = () => {
         />
 
         <LineComponent
-          points={[100, 0, 100, 100]}
+          points={[0, 200, 100 * sinFunc(angle), 200 + 100 * cosFunc(angle)]}
           backgroundColor="blue"
           borderColor="red"
         />
