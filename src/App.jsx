@@ -25,6 +25,7 @@ const App = () => {
         width="600px"
         height="600px"
         backgroundColor="rgb(240, 230, 250)"
+        onMousedown={getAngle}
       >
         <ReversedTurtleComponent
           x={300}
