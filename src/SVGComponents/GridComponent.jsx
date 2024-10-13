@@ -14,21 +14,21 @@ const GridComponent = ({ fieldHeight, fieldWidth, cellHeight, cellWidth }) => {
 
   return (
     <>
-      {horizontalCoordinates.map((item) => {
+      {verticalCoordinates.map((height) => {
         return (
           <LineComponent
-            key={item}
-            points={[item, 0, item, 1000]}
+            key={height}
+            points={[0, height, fieldWidth, height]}
             backgroundColor="blue"
             borderColor="red"
           />
         );
       })}
-      {verticalCoordinates.map((item) => {
+      {horizontalCoordinates.map((width) => {
         return (
           <LineComponent
-            key={item}
-            points={[0, item, 1000, item]}
+            key={width}
+            points={[width, 0, width, fieldHeight]}
             backgroundColor="blue"
             borderColor="red"
           />
