@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-import { SVGFieldComponent, LineComponent } from "./SVGComponents";
+import {
+  SVGFieldComponent,
+  LineComponent,
+  ReversedTurtleComponent,
+} from "./SVGComponents";
 
 const App = () => {
   let horizontalCoordinates = [];
