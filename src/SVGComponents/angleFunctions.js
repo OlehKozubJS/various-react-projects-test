@@ -1,7 +1,7 @@
 const RADIAN = Math.PI / 180;
 
 const square = (number) => {
-  return Math.square(number, 2);
+  return Math.pow(number, 2);
 };
 
 const sinFunc = (angle) => {
