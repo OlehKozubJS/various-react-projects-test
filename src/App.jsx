@@ -4,6 +4,8 @@ import {
   SVGFieldComponent,
   LineComponent,
   ReversedTurtleComponent,
+  sinFunc,
+  cosFunc,
 } from "./SVGComponents";
 
 const App = () => {
