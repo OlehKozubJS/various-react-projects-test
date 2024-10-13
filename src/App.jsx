@@ -17,13 +17,13 @@ const App = () => {
   return (
     <>
       <SVGFieldComponent
-        width="1000px"
-        height="1000px"
+        width="600px"
+        height="600px"
         backgroundColor="rgb(240, 230, 250)"
       >
         <ReversedTurtleComponent
-          x={500}
-          y={500}
+          x={300}
+          y={300}
           turn={0}
           backgroundColor={"red"}
           borderColor={"blue"}
