@@ -47,7 +47,7 @@ const App = () => {
           borderColor="red"
         />
       </SVGFieldComponent>
-      {Math.round(Math.asin(Math.pow(3, 1 / 2) / 2) / (Math.PI / 180))}
+      {""}
     </>
   );
 };
