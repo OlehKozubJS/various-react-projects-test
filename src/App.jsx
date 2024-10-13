@@ -30,11 +30,11 @@ const App = () => {
           borderColor={"rgb(200, 180, 120)"}
         />
         <RegularPolygonComponent
-          x={35}
-          y={30}
+          x={100}
+          y={100}
           length={25}
-          angle={170}
-          angleNumber={3}
+          angle={0}
+          angleNumber={12}
           backgroundColor={"cyan"}
           borderColor={"rgb(200, 100, 180)"}
         />
