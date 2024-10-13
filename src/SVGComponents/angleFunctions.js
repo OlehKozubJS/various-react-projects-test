@@ -28,4 +28,11 @@ const getLengthByXY = (x1, y1, x2, y2) => {
   Math.sqrt(square(x2 - x1) + (y2 - y1));
 };
 
-export { sinFunc, cosFunc, arcSinFunc, arcCosFunc, getXYbyAngle };
+export {
+  sinFunc,
+  cosFunc,
+  arcSinFunc,
+  arcCosFunc,
+  getXYbyAngle,
+  getLengthByXY,
+};
