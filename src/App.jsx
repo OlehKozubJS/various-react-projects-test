@@ -19,7 +19,7 @@ const App = () => {
         {
           for(let x = 0; x <= 300; x++) 
         {return (<LineComponent
-          points={[0, 100, 100, 100]}
+          points={[x, 0, x, 300]}
           backgroundColor="blue"
           borderColor="red"
         />);}
