@@ -28,6 +28,12 @@ const getXYbyAngle = (x, y, length, angle) => {
   return [x + length * sinFunc(angle), y - length * cosFunc(angle)];
 };
 
+const getAngleByXY = (x1, y1, x2, y2) => {
+  const hypotenuse = getAngleByXY(x1, y1, x2, y2);
+  const adjacentSide = y1 - y1;
+  return arcCosFunc(adjacentSide / hypotenuse);
+};
+
 export {
   sinFunc,
   cosFunc,
