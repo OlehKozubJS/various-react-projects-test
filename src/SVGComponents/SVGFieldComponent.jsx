@@ -3,7 +3,7 @@ const SVGFieldComponent = ({
   width,
   height,
   backgroundColor,
-  onMousedown,
+  onMouseDown,
 }) => {
   return (
     <svg
@@ -12,7 +12,7 @@ const SVGFieldComponent = ({
         height,
         backgroundColor,
       }}
-      onMousedown={onMousedown}
+      onMouseDown={onMouseDown}
     >
       {children}
     </svg>
