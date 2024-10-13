@@ -20,4 +20,4 @@ const angleFunction = (x, y, length, angle) => {
   return [x + length * sinFunc(angle), y - length * cosFunc(angle)];
 };
 
-export { sinFunc, cosFunc, angleFunction };
+export { sinFunc, cosFunc, arcSinFunc, arcCosFunc, angleFunction };
