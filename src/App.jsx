@@ -18,13 +18,13 @@ const App = () => {
       >
         <LineComponent
           points={[0, 100, 100, 100]}
-          backgroundColor={"blue"}
-          borderColor={"red"}
+          backgroundColor="blue"
+          borderColor="red"
         />
         <LineComponent
           points={[100, 0, 100, 100]}
-          backgroundColor={"blue"}
-          borderColor={"red"}
+          backgroundColor="blue"
+          borderColor="red"
         />
         <RadiantLineComponent
           x={150}
