@@ -12,8 +12,8 @@ const App = () => {
   return (
     <>
       <SVGFieldComponent
-        width="300px"
-        height="300px"
+        width="1000px"
+        height="1000px"
         backgroundColor="rgb(240, 230, 250)"
       >
         <LineComponent
@@ -25,7 +25,7 @@ const App = () => {
           x={150}
           y={150}
           length={150}
-          angle={30}
+          angle={120}
           backgroundColor={"none"}
           borderColor={"rgb(200, 180, 120)"}
         />
