@@ -1,4 +1,4 @@
-import { angleFunction } from "./angleFunctions";
+import { getXYbyAngle } from "./angleFunctions";
 
 import { LineComponent } from "./LineComponent";
 
@@ -18,7 +18,7 @@ const RegularPolygonComponent = ({
     amountOfSides <= angleNumber + 1;
     ++amountOfSides
   ) {
-    const xy = angleFunction(
+    const xy = getXYbyAngle(
       x,
       y,
       length,
