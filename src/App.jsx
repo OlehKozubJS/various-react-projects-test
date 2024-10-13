@@ -36,6 +36,12 @@ const App = () => {
           backgroundColor="blue"
           borderColor="red"
         />
+
+        <LineComponent
+          points={[100, 0, 100, 100]}
+          backgroundColor="blue"
+          borderColor="red"
+        />
       </SVGFieldComponent>
     </>
   );
