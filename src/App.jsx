@@ -17,7 +17,12 @@ const App = () => {
         backgroundColor="rgb(240, 230, 250)"
       >
         <LineComponent
-          points={[0, 0, 50, 50, 100, 50, 50, 0]}
+          points={[0, 100, 100, 100]}
+          backgroundColor={"blue"}
+          borderColor={"red"}
+        />
+        <LineComponent
+          points={[100, 0, 100, 100]}
           backgroundColor={"blue"}
           borderColor={"red"}
         />
@@ -33,8 +38,8 @@ const App = () => {
           x={100}
           y={100}
           length={25}
-          angle={0}
-          angleNumber={12}
+          angle={45}
+          angleNumber={4}
           backgroundColor={"cyan"}
           borderColor={"rgb(200, 100, 180)"}
         />
