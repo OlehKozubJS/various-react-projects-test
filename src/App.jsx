@@ -16,7 +16,7 @@ const App = () => {
   const getAngle = (event) => {
     const cursorX = event.target.clientX;
     const cursorY = event.target.clientY;
-    setAngleValue(getAngleByXY(300, 300, cursorX, cursorY));
+    setAngleValue(getAngleByXY(300, 300, Number(cursorX), Number(cursorY)));
   };
 
   return (
