@@ -25,7 +25,7 @@ const getXYbyAngle = (x, y, length, angle) => {
 };
 
 const getLengthByXY = (x1, y1, x2, y2) => {
-  Math.sqrt(square(x2 - x1) + (y2 - y1));
+  return Math.sqrt(square(x2 - x1) + (y2 - y1));
 };
 
 export {
