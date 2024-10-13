@@ -4,11 +4,14 @@ import { RadiantLineComponent } from "./RadiantLineComponent";
 import { RegularPolygonComponent } from "./RegularPolygonComponent";
 import { TurtleComponent } from "./TurtleComponent";
 import { ReversedTurtleComponent } from "./ReversedTurtleComponent";
-import
+import { GridComponent } from "./GridComponent";
+
 export {
   SVGFieldComponent,
   LineComponent,
   RadiantLineComponent,
   RegularPolygonComponent,
   TurtleComponent,
+  ReversedTurtleComponent,
+  GridComponent,
 };
