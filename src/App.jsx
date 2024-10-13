@@ -47,7 +47,7 @@ const App = () => {
           x={215}
           y={230}
           turn={0}
-          backgroundColor="rgb(60, 60, 170)"
+          backgroundColor="rgb(90, 90, 170)"
           borderColor="rgb(30, 30, 170)"
         />
       </SVGFieldComponent>
