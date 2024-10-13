@@ -23,9 +23,9 @@ const App = () => {
         />
         <RadiantLineComponent
           x={150}
-          y={65}
-          length={125}
-          angle={0}
+          y={150}
+          length={150}
+          angle={30}
           backgroundColor={"none"}
           borderColor={"rgb(200, 180, 120)"}
         />
@@ -41,7 +41,7 @@ const App = () => {
         <TurtleComponent
           x={215}
           y={230}
-          turn={180}
+          turn={0}
           backgroundColor={"rgb(60, 60, 70)"}
           borderColor={"rgb(30, 30, 70)"}
         />

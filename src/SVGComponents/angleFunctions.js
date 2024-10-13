@@ -7,7 +7,7 @@ const cosFunc = (angle) => {
 };
 
 const angleFunction = (x, y, length, angle) => {
-  return [x + length * sinFunc(angle), y + length * cosFunc(angle)];
+  return [x + length * sinFunc(angle), y - length * cosFunc(angle)];
 };
 
 export { sinFunc, cosFunc, angleFunction };
