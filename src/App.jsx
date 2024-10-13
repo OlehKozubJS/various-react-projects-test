@@ -24,6 +24,13 @@ const App = () => {
         height="1000px"
         backgroundColor="rgb(240, 230, 250)"
       >
+        <ReversedTurtleComponent
+          x={500}
+          y={500}
+          turn={45}
+          backgroundColor={"red"}
+          borderColor={"blue"}
+        />
         <LineComponent
           points={[100, 0, 100, 100]}
           backgroundColor="blue"
