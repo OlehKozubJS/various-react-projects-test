@@ -5,7 +5,7 @@ import { RegularPolygonComponent } from "./RegularPolygonComponent";
 import { TurtleComponent } from "./TurtleComponent";
 import { ReversedTurtleComponent } from "./ReversedTurtleComponent";
 import { GridComponent } from "./GridComponent";
-import { sinFunc, cosFunc, angleFunction } from "./angleFunctions";
+import { sinFunc, cosFunc, getXYbyAngle } from "./angleFunctions";
 
 export {
   SVGFieldComponent,
@@ -17,5 +17,5 @@ export {
   GridComponent,
   sinFunc,
   cosFunc,
-  angleFunction,
+  getXYbyAngle,
 };
