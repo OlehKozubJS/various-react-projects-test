@@ -1,4 +1,4 @@
-import { angleFunction } from "./angleFunctions";
+import { getXYbyAngle } from "./angleFunctions";
 
 import { LineComponent } from "./LineComponent";
 
@@ -12,7 +12,7 @@ const RadiantLineComponent = ({
 }) => {
   return (
     <LineComponent
-      points={[x, y, angleFunction(x, y, length, angle)]}
+      points={[x, y, getXYbyAngle(x, y, length, angle)]}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
     />
