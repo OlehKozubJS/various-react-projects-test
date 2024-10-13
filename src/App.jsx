@@ -25,7 +25,7 @@ const App = () => {
           x={150}
           y={65}
           length={125}
-          angle={10}
+          angle={0}
           backgroundColor={"none"}
           borderColor={"rgb(200, 180, 120)"}
         />
