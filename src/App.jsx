@@ -31,8 +31,8 @@ const App = () => {
           y={150}
           length={150}
           angle={0}
-          backgroundColor={"none"}
-          borderColor={"rgb(200, 180, 120)"}
+          backgroundColor="none"
+          borderColor="rgb(200, 180, 120)"
         />
         <RegularPolygonComponent
           x={100}
@@ -40,15 +40,15 @@ const App = () => {
           length={25}
           angle={15}
           angleNumber={3}
-          backgroundColor={"cyan"}
-          borderColor={"rgb(200, 100, 180)"}
+          backgroundColor="cyan"
+          borderColor="rgb(200, 100, 180)"
         />
         <TurtleComponent
           x={215}
           y={230}
           turn={0}
-          backgroundColor={"rgb(60, 60, 70)"}
-          borderColor={"rgb(30, 30, 70)"}
+          backgroundColor="rgb(60, 60, 170)"
+          borderColor="rgb(30, 30, 170)"
         />
       </SVGFieldComponent>
     </>
