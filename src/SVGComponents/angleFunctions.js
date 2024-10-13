@@ -12,6 +12,10 @@ const arcSinFunc = (sine) => {
   return Math.round(Math.asin(sine) / RADIAN);
 };
 
+const arcCosFunc = (cosine) => {
+  return Math.round(Math.acos(cosine) / RADIAN);
+};
+
 const angleFunction = (x, y, length, angle) => {
   return [x + length * sinFunc(angle), y - length * cosFunc(angle)];
 };
