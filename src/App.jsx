@@ -40,6 +40,7 @@ const App = () => {
           borderColor="red"
         />
       </SVGFieldComponent>
+      {angle}
     </>
   );
 };
