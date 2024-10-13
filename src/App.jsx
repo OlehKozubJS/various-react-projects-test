@@ -29,17 +29,6 @@ const App = () => {
           backgroundColor={"red"}
           borderColor={"blue"}
         />
-        <LineComponent
-          points={[100, 0, 100, 100]}
-          backgroundColor="blue"
-          borderColor="red"
-        />
-
-        <LineComponent
-          points={[0, 200, 100 * sinFunc(angle), 200 + 100 * cosFunc(angle)]}
-          backgroundColor="blue"
-          borderColor="red"
-        />
       </SVGFieldComponent>
       {""}
     </>
@@ -47,3 +36,17 @@ const App = () => {
 };
 
 export { App };
+
+/**
+ <LineComponent
+    points={[100, 0, 100, 100]}
+    backgroundColor="blue"
+    borderColor="red"
+  />
+
+  <LineComponent
+    points={[0, 200, 100 * sinFunc(angle), 200 + 100 * cosFunc(angle)]}
+    backgroundColor="blue"
+    borderColor="red"
+  />
+ */
