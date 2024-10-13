@@ -41,7 +41,7 @@ const App = () => {
         <TurtleComponent
           x={215}
           y={230}
-          turn={60}
+          turn={180}
           backgroundColor={"rgb(60, 60, 70)"}
           borderColor={"rgb(30, 30, 70)"}
         />
