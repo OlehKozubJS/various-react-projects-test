@@ -47,7 +47,7 @@ const App = () => {
           borderColor="red"
         />
       </SVGFieldComponent>
-      {(Math.asin(Math.pow(2, 1 / 2) / 2) / Math.PI) * 180}
+      {Math.asin(Math.pow(3, 1 / 2) / 2) / (Math.PI / 180)}
     </>
   );
 };
