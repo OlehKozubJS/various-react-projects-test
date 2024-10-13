@@ -16,11 +16,14 @@ const App = () => {
         height="1000px"
         backgroundColor="rgb(240, 230, 250)"
       >
-        <LineComponent
+        {
+          for(let x = 0; x <= 300; x++) 
+        {return (<LineComponent
           points={[0, 100, 100, 100]}
           backgroundColor="blue"
           borderColor="red"
-        />
+        />);}
+        }
         <LineComponent
           points={[100, 0, 100, 100]}
           backgroundColor="blue"
