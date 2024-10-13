@@ -9,6 +9,16 @@ import {
 } from "./SVGComponents";
 
 const App = () => {
+  for (let x = 0; x <= 300; x += 10) {
+    return (
+      <LineComponent
+        points={[x, 0, x, 300]}
+        backgroundColor="blue"
+        borderColor="red"
+      />
+    );
+  }
+
   return (
     <>
       <SVGFieldComponent
@@ -16,14 +26,7 @@ const App = () => {
         height="1000px"
         backgroundColor="rgb(240, 230, 250)"
       >
-        {
-          for(let x = 0; x <= 300; x++) 
-        {return (<LineComponent
-          points={[x, 0, x, 300]}
-          backgroundColor="blue"
-          borderColor="red"
-        />);}
-        }
+        {}
         <LineComponent
           points={[100, 0, 100, 100]}
           backgroundColor="blue"
