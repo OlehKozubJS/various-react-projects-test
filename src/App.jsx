@@ -10,22 +10,42 @@ import {
 const App = () => {
   const angle = 0;
   const [angleValue, setAngleValue] = useState(0);
-  const [initialX, setInitialX] = useState(0);
+  const [initialAngle, setInitialAngle] = useState(0);
   const [isDraggable, setIsDraggable] = useState(false);
 
-  const getAngle = (event) => {
+  const calculateCurrentAngle = (event) => {
     const cursorX = event.clientX;
     const cursorY = event.clientY;
     const angle = getAngleByXY(300, 300, cursorX, cursorY);
     if (cursorX >= 300) {
-      setAngleValue(angle);
+      return angle;
     } else {
-      setAngleValue(360 - angle);
+      return 360 - angle;
     }
   };
 
+  const startMoving = (event) => {
+    setIsDraggable(true);
+    setInitialAngle(calculateCurrentAngle(event));
+  };
+
+  const moveTurtle = (event) => {
+    if (!isDraggable) {
+      return;
+    }
+    setAngleValue(angleValue - (calculateCurrentAngle(event) - initialAngle));
+  };
+
+  const stopMoving = (event) => {
+    setIsDraggable(false);
+  };
+
   return (
-    <div onMouseDown={getAngle}>
+    <div
+      onMouseDown={startMoving}
+      onMouseMove={moveTurtle}
+      onMouseUp={stopMoving}
+    >
       <SVGFieldComponent
         width="600px"
         height="600px"
@@ -45,17 +65,3 @@ const App = () => {
 };
 
 export { App };
-
-/**
- <LineComponent
-    points={[100, 0, 100, 100]}
-    backgroundColor="blue"
-    borderColor="red"
-  />
-
-  <LineComponent
-    points={[0, 200, 100 * sinFunc(angle), 200 + 100 * cosFunc(angle)]}
-    backgroundColor="blue"
-    borderColor="red"
-  />
- */
