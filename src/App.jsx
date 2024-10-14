@@ -34,7 +34,7 @@ const App = () => {
         <ReversedTurtleComponent
           x={300}
           y={300}
-          turn={0}
+          turn={angleValue}
           backgroundColor={"red"}
           borderColor={"blue"}
         />
