@@ -14,7 +14,7 @@ const ReversedTurtleComponent = ({
       points={[
         x,
         y,
-        ...getXYbyAngle(x, y, 100, turn),
+        ...getXYbyAngle(x, y, 80, turn),
         ...getXYbyAngle(x, y, 100, turn + 30),
         x,
         y,
