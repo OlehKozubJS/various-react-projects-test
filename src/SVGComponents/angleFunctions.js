@@ -30,7 +30,7 @@ const getXYbyAngle = (x, y, length, angle) => {
 
 const getAngleByXY = (x1, y1, x2, y2) => {
   const hypotenuse = getLengthByXY(x1, y1, x2, y2);
-  const adjacentSide = y1 - y1;
+  const adjacentSide = y2 - y1;
   return arcCosFunc(adjacentSide / hypotenuse);
 };
 
