@@ -34,7 +34,10 @@ const App = () => {
     if (!isDraggable) {
       return;
     }
-    setAngleValue(calculateCurrentAngle(event) - initialAngle);
+
+    const newAngleValue = calculateCurrentAngle(event) - initialAngle;
+
+    setAngleValue(newAngleValue);
   };
 
   const stopMoving = () => {
