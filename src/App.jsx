@@ -14,11 +14,9 @@ const App = () => {
   const [isDraggable, setIsDraggable] = useState(false);
 
   const getAngle = (event) => {
-    const cursorX = event.target.clientX;
-    const cursorY = event.target.clientY;
-    setAngleValue(
-      /*getAngleByXY(300, 300, Number(cursorX), Number(cursorY))*/ `${cursorX} ${cursorY}`
-    );
+    const cursorX = event.clientX;
+    const cursorY = event.clientY;
+    setAngleValue(getAngleByXY(300, 300, cursorX, cursorY));
   };
 
   return (
