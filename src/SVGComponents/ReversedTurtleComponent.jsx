@@ -12,10 +12,12 @@ const ReversedTurtleComponent = ({
   return (
     <LineComponent
       points={[
-        ...getXYbyAngle(x, y, 100, -15 + turn),
-        ...getXYbyAngle(x, y, 0, turn),
-        ...getXYbyAngle(x, y, 100, 15 + turn),
-        ...getXYbyAngle(x, y, 100, -15 + turn),
+        x,
+        y,
+        ...getXYbyAngle(x, y, 100, turn),
+        ...getXYbyAngle(x, y, 100, turn + 30),
+        x,
+        y,
       ]}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
