@@ -26,14 +26,15 @@ const App = () => {
 
   const startMoving = (event) => {
     setIsDraggable(true);
-    setInitialAngle(calculateCurrentAngle(event));
+    setInitialAngle(calculateCurrentAngle(event) - angleValue);
   };
 
   const moveTurtle = (event) => {
+    event.preventDefault();
     if (!isDraggable) {
       return;
     }
-    setAngleValue(calculateCurrentAngle(event) - (initialAngle - angleValue));
+    setAngleValue(calculateCurrentAngle(event) - initialAngle);
   };
 
   const stopMoving = () => {
@@ -41,17 +42,16 @@ const App = () => {
   };
 
   return (
-    <div
-      onMouseDown={startMoving}
-      onMouseMove={moveTurtle}
-      onMouseUp={stopMoving}
-    >
+    <div>
       <SVGFieldComponent
         width="600px"
         height="600px"
         backgroundColor="rgb(240, 230, 250)"
       >
         <ReversedTurtleComponent
+          onMouseDown={startMoving}
+          onMouseMove={moveTurtle}
+          onMouseUp={stopMoving}
           x={300}
           y={300}
           turn={angleValue}
@@ -59,7 +59,7 @@ const App = () => {
           borderColor={"blue"}
         />
       </SVGFieldComponent>
-      {angleValue}
+      {initialAngle}
     </div>
   );
 };

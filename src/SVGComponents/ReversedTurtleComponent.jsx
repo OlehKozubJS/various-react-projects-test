@@ -8,6 +8,9 @@ const ReversedTurtleComponent = ({
   turn,
   backgroundColor,
   borderColor,
+  onMouseDown,
+  onMouseMove,
+  onMouseUp,
 }) => {
   return (
     <LineComponent
@@ -21,6 +24,9 @@ const ReversedTurtleComponent = ({
       ]}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
+      onMouseDown={onMouseDown}
+      onMouseMove={onMouseMove}
+      onMouseUp={onMouseUp}
     />
   );
 };
