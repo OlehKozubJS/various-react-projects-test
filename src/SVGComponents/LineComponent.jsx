@@ -14,6 +14,7 @@ const LineComponent = ({
       onMouseDown={onMouseDown}
       onMouseMove={onMouseMove}
       onMouseUp={onMouseUp}
+      onMouseLeave={onMouseUp}
     ></polyline>
   );
 };
