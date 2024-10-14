@@ -59,7 +59,7 @@ const App = () => {
           borderColor={"blue"}
         />
       </SVGFieldComponent>
-      {initialAngle}
+      {angleValue}
     </div>
   );
 };
