@@ -43,6 +43,12 @@ const App = () => {
 
   const stopMoving = () => {
     setIsDraggable(false);
+    console.log("stopped!");
+  };
+
+  const resetDefaults = () => {
+    setAngleValue(0);
+    setInitialAngle(0);
   };
 
   return (
@@ -63,6 +69,9 @@ const App = () => {
           borderColor={"blue"}
         />
       </SVGFieldComponent>
+      <button type="button" onClick={resetDefaults}>
+        Reset Defaults
+      </button>
       {`angle value: ${angleValue}, 
       initialValue: ${initialAngle},
       isDraggable: ${isDraggable}`}
