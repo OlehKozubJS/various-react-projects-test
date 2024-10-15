@@ -40,6 +40,9 @@ const ArrowComponent = ({ x, y, onTurn, backgroundColor, borderColor }) => {
       if (newAngleValue < 0) {
         newAngleValue += 360;
       }
+      if (newAngleValue - angleValue >= -8) {
+        setAngleValue(newAngleValue - 15);
+      }
       setAngleValue(newAngleValue);
     }
   };
