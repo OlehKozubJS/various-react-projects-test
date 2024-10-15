@@ -69,6 +69,7 @@ const App = () => {
           borderColor={"blue"}
         />
       </SVGFieldComponent>
+      <br />
       <button type="button" onClick={resetDefaults}>
         Reset Defaults
       </button>
