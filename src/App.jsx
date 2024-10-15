@@ -39,7 +39,6 @@ const App = () => {
 
     const finalAngle = calculateCurrentAngle(event);
     const newAngleValue = -angleValue + initialAngle - finalAngle;
-
     setAngleValue(newAngleValue);
   };
 
