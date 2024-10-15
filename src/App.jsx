@@ -15,15 +15,7 @@ const App = () => {
         width="600px"
         height="600px"
         backgroundColor="rgb(240, 230, 250)"
-      >
-        <ArrowComponent
-          x={100}
-          y={150}
-          onTurn={handleTurn}
-          backgroundColor={"red"}
-          borderColor={"blue"}
-        />
-      </SVGFieldComponent>
+      ></SVGFieldComponent>
       {`angle value: ${angle}`}
     </div>
   );
@@ -33,6 +25,14 @@ export { App };
 
 /*
 
+        <ArrowComponent
+          x={100}
+          y={150}
+          onTurn={handleTurn}
+          backgroundColor={"red"}
+          borderColor={"blue"}
+        />
 
 
+        
 */
