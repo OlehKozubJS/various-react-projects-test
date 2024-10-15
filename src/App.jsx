@@ -35,10 +35,10 @@ const App = () => {
     if (isDraggable) {
       const angle = calculateCurrentAngle(event) - initialAngle;
 
-      if (event.clientX >= 300) {
+      if (angle >= 0) {
         setAngleValue(angle);
       } else {
-        setAngleValue(360 - angle);
+        setAngleValue(360 + angle);
       }
     }
   };
