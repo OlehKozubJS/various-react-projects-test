@@ -8,7 +8,6 @@ import {
 } from "./SVGComponents";
 
 const App = () => {
-  const angle = 0;
   const [angleValue, setAngleValue] = useState(0);
   const [initialAngle, setInitialAngle] = useState(0);
   const [isDraggable, setIsDraggable] = useState(false);
