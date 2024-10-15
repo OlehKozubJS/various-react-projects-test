@@ -33,13 +33,12 @@ const App = () => {
     event.preventDefault();
 
     if (isDraggable) {
-      const angle = calculateCurrentAngle(event) - initialAngle;
+      let angle = calculateCurrentAngle(event) - initialAngle;
 
-      if (angle >= 0) {
-        setAngleValue(angle);
-      } else {
-        setAngleValue(360 + angle);
+      if (angle < 0) {
+        angle += 360;
       }
+      setAngleValue(angle);
     }
   };
 
