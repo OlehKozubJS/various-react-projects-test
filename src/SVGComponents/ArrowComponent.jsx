@@ -62,8 +62,9 @@ const ArrowComponent = ({ x, y, onTurn, backgroundColor, borderColor }) => {
       points={[
         x,
         y,
-        ...getXYbyAngle(x, y, 200, angleValue),
-        ...getXYbyAngle(x, y, 200, angleValue + 90),
+        ...getXYbyAngle(x, y, 50, angleValue - 25),
+        ...getXYbyAngle(x, y, 2000, angleValue),
+        ...getXYbyAngle(x, y, 50, angleValue + 25),
         x,
         y,
       ]}
