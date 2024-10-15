@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   SVGFieldComponent,
   ReversedTurtleComponent,
-  getLengthByXY,
   getAngleByXY,
 } from "./SVGComponents";
 
