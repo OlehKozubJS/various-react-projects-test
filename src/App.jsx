@@ -15,12 +15,11 @@ const App = () => {
   const calculateCurrentAngle = (event) => {
     const cursorX = event.clientX;
     const cursorY = event.clientY;
-    const angle = getAngleByXY(300, 300, cursorX, cursorY);
-    if (cursorX >= 300) {
-      return angle;
-    } else {
-      return 360 - angle;
+    let angle = getAngleByXY(300, 300, cursorX, cursorY);
+    if (cursorX < 300) {
+      angle = 360 - angle;
     }
+    return angle;
   };
 
   const startMoving = (event) => {
