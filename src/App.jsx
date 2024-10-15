@@ -17,7 +17,7 @@ const App = () => {
         backgroundColor="rgb(240, 230, 250)"
       >
         <ArrowComponent
-          x={300}
+          x={100}
           y={300}
           onTurn={handleTurn}
           backgroundColor={"red"}
@@ -30,3 +30,9 @@ const App = () => {
 };
 
 export { App };
+
+/*
+
+
+
+*/
