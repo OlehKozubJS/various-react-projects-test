@@ -16,7 +16,7 @@ const ArrowComponent = ({ x, y, onTurn, backgroundColor, borderColor }) => {
   const calculateCurrentAngle = (event) => {
     const cursorX = event.clientX;
     const cursorY = event.clientY;
-    let angle = getAngleByXY(300, 300, cursorX, cursorY);
+    let angle = getAngleByXY(x, y, cursorX, cursorY);
     if (cursorX < x) {
       angle = 360 - angle;
     }
