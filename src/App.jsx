@@ -18,7 +18,7 @@ const App = () => {
       >
         <ArrowComponent
           x={100}
-          y={300}
+          y={150}
           onTurn={handleTurn}
           backgroundColor={"red"}
           borderColor={"blue"}
