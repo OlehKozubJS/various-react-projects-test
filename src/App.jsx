@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   SVGFieldComponent,
@@ -9,6 +9,7 @@ import {
 const App = () => {
   const [angleValue, setAngleValue] = useState(0);
   const [initialAngle, setInitialAngle] = useState(0);
+  const [finalAngle, setFinalAngle] = useState(0);
   const [isDraggable, setIsDraggable] = useState(false);
 
   const calculateCurrentAngle = (event) => {
@@ -24,26 +25,26 @@ const App = () => {
 
   const startMoving = (event) => {
     setIsDraggable(true);
-    const newInitialAngle = calculateCurrentAngle(event);
-    setInitialAngle(newInitialAngle - angleValue);
+
+    setInitialAngle(calculateCurrentAngle(event));
   };
 
   const moveTurtle = (event) => {
     event.preventDefault();
 
-    if (!isDraggable) {
-      return;
+    if (isDraggable) {
+      setFinalAngle(calculateCurrentAngle(event));
     }
-
-    const finalAngle = calculateCurrentAngle(event);
-    const newAngleValue = finalAngle - initialAngle;
-    setAngleValue(newAngleValue);
   };
 
   const stopMoving = () => {
     setIsDraggable(false);
     console.log("stopped!");
   };
+
+  useEffect(() => {
+    setAngleValue(angleValue + finalAngle - initialAngle);
+  }, [finalAngle]);
 
   const resetDefaults = () => {
     setAngleValue(0);
