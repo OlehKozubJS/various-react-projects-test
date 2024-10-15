@@ -5,6 +5,8 @@ import { RegularPolygonComponent } from "./RegularPolygonComponent";
 import { TurtleComponent } from "./TurtleComponent";
 import { ReversedTurtleComponent } from "./ReversedTurtleComponent";
 import { GridComponent } from "./GridComponent";
+import { ArrowComponent } from "./ArrowComponent";
+
 import {
   sinFunc,
   cosFunc,
@@ -30,4 +32,5 @@ export {
   getLengthByXY,
   getXYbyAngle,
   getAngleByXY,
+  ArrowComponent,
 };

@@ -4,13 +4,7 @@ import { getXYbyAngle } from "./angleFunctions";
 
 import { LineComponent } from "./LineComponent";
 
-const ReversedTurtleComponent = ({
-  x,
-  y,
-  onTurn,
-  backgroundColor,
-  borderColor,
-}) => {
+const ArrowComponent = ({ x, y, onTurn, backgroundColor, borderColor }) => {
   const [angleValue, setAngleValue] = useState(0);
   const [initialAngle, setInitialAngle] = useState(0);
   const [isDraggable, setIsDraggable] = useState(false);
@@ -82,4 +76,4 @@ const ReversedTurtleComponent = ({
   );
 };
 
-export { ReversedTurtleComponent };
+export { ArrowComponent };
