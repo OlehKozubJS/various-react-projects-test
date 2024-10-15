@@ -2,12 +2,15 @@
   "name": "profound-svg-graphics-test",
   "homepage": "https://OlehKozubJS.github.io/profound-svg-graphics-test/",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "react-scripts build",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.3.1",
