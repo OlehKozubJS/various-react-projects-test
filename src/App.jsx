@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import {
   SVGFieldComponent,
@@ -9,7 +9,6 @@ import {
 const App = () => {
   const [angleValue, setAngleValue] = useState(0);
   const [initialAngle, setInitialAngle] = useState(0);
-  const [finalAngle, setFinalAngle] = useState(0);
   const [isDraggable, setIsDraggable] = useState(false);
 
   const getQuantalAngle = (angle, step) => {
