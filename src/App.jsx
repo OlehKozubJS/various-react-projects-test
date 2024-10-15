@@ -3,12 +3,6 @@ import { useState } from "react";
 import { SVGFieldComponent, ArrowComponent } from "./SVGComponents";
 
 const App = () => {
-  const [angle, setAngle] = useState(0);
-
-  const handleTurn = (value) => {
-    setAngle(value);
-  };
-
   return (
     <div>
       <SVGFieldComponent
@@ -16,7 +10,6 @@ const App = () => {
         height="600px"
         backgroundColor="rgb(240, 230, 250)"
       ></SVGFieldComponent>
-      {`angle value: ${angle}`}
     </div>
   );
 };
@@ -24,6 +17,12 @@ const App = () => {
 export { App };
 
 /*
+  const [angle, setAngle] = useState(0);
+
+  const handleTurn = (value) => {
+    setAngle(value);
+  };
+
 
         <ArrowComponent
           x={100}
@@ -32,7 +31,6 @@ export { App };
           backgroundColor={"red"}
           borderColor={"blue"}
         />
-
-
         
+      {`angle value: ${angle}`}    
 */
