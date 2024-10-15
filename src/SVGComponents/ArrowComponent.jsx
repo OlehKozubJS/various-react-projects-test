@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getXYbyAngle } from "./angleFunctions";
+import { getAngleByXY, getXYbyAngle } from "./angleFunctions";
 
 import { LineComponent } from "./LineComponent";
 
