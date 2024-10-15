@@ -49,7 +49,7 @@ const App = () => {
 
   const stopMoving = () => {
     setIsDraggable(false);
-    const quantalAngle = getQuantalAngle(angleValue, 45);
+    const quantalAngle = getQuantalAngle(angleValue, 15);
     if (quantalAngle < 0) {
       quantalAngle += 360;
     }
