@@ -26,25 +26,20 @@ const App = () => {
   const startMoving = (event) => {
     setIsDraggable(true);
 
-    setInitialAngle(calculateCurrentAngle(event));
+    setInitialAngle(calculateCurrentAngle(event) - angleValue);
   };
 
   const moveTurtle = (event) => {
     event.preventDefault();
 
     if (isDraggable) {
-      setFinalAngle(calculateCurrentAngle(event));
+      setAngleValue(calculateCurrentAngle(event) - initialAngle);
     }
   };
 
   const stopMoving = () => {
     setIsDraggable(false);
-    console.log("stopped!");
   };
-
-  useEffect(() => {
-    setAngleValue(angleValue + finalAngle - initialAngle);
-  }, [finalAngle]);
 
   const resetDefaults = () => {
     setAngleValue(0);
