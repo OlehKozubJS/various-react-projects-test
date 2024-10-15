@@ -64,7 +64,9 @@ const App = () => {
           borderColor={"blue"}
         />
       </SVGFieldComponent>
-      {`${angleValue} ${initialAngle} ${isDraggable}`}
+      {`angle value: ${angleValue}, 
+      initialValue: ${initialAngle},
+      isDraggable: ${isDraggable}`}
     </div>
   );
 };
