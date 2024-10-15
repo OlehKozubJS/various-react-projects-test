@@ -37,11 +37,14 @@ const ArrowComponent = ({ x, y, onTurn, backgroundColor, borderColor }) => {
 
     if (isDraggable) {
       let newAngleValue = calculateCurrentAngle(event) - initialAngle;
+      if (newAngleValue - angleValue >= -8) {
+        newAngleValue -= 15;
+      }
+      if (newAngleValue - angleValue >= 8) {
+        newAngleValue += 15;
+      }
       if (newAngleValue < 0) {
         newAngleValue += 360;
-      }
-      if (newAngleValue - angleValue >= -8) {
-        setAngleValue(newAngleValue - 15);
       }
       setAngleValue(newAngleValue);
     }
@@ -49,11 +52,6 @@ const ArrowComponent = ({ x, y, onTurn, backgroundColor, borderColor }) => {
 
   const stopMoving = () => {
     setIsDraggable(false);
-    const quantalAngle = getQuantalAngle(angleValue, 15);
-    if (quantalAngle < 0) {
-      quantalAngle += 360;
-    }
-    setAngleValue(quantalAngle);
   };
 
   useEffect(() => {
