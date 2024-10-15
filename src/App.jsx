@@ -25,7 +25,7 @@ const App = () => {
   const startMoving = (event) => {
     setIsDraggable(true);
     const newInitialAngle = calculateCurrentAngle(event);
-    setInitialAngle(newInitialAngle);
+    setInitialAngle(newInitialAngle - angleValue);
   };
 
   const moveTurtle = (event) => {
@@ -36,7 +36,7 @@ const App = () => {
     }
 
     const finalAngle = calculateCurrentAngle(event);
-    const newAngleValue = angleValue + finalAngle - initialAngle;
+    const newAngleValue = finalAngle - initialAngle;
     setAngleValue(newAngleValue);
   };
 
