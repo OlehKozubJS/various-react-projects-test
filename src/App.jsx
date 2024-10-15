@@ -12,6 +12,10 @@ const App = () => {
   const [finalAngle, setFinalAngle] = useState(0);
   const [isDraggable, setIsDraggable] = useState(false);
 
+  const getQuantalAngle = (angle, step) => {
+    return Math.round(angle / step) * step;
+  };
+
   const calculateCurrentAngle = (event) => {
     const cursorX = event.clientX;
     const cursorY = event.clientY;
@@ -33,7 +37,6 @@ const App = () => {
 
     if (isDraggable) {
       let angle = calculateCurrentAngle(event) - initialAngle;
-
       if (angle < 0) {
         angle += 360;
       }
@@ -43,6 +46,7 @@ const App = () => {
 
   const stopMoving = () => {
     setIsDraggable(false);
+    setAngleValue(getQuantalAngle(angleValue));
   };
 
   const resetDefaults = () => {
