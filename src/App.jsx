@@ -4,13 +4,13 @@ import { SVGFieldComponent, ArrowComponent } from "./SVGComponents";
 
 const App = () => {
   return (
-    <div>
+    <>
       <SVGFieldComponent
         width="600px"
         height="600px"
         backgroundColor="rgb(240, 230, 250)"
       ></SVGFieldComponent>
-    </div>
+    </>
   );
 };
 
@@ -31,6 +31,6 @@ export { App };
           backgroundColor={"red"}
           borderColor={"blue"}
         />
-        
+
       {`angle value: ${angle}`}    
 */
