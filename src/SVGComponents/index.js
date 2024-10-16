@@ -34,4 +34,5 @@ export {
   getXYbyAngle,
   getAngleByXY,
   ArrowComponent,
+  Parable,
 };
