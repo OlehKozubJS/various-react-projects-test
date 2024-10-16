@@ -45,6 +45,8 @@ const ArrowComponent = ({ x, y, onTurn, backgroundColor, borderColor }) => {
   };
 
   const stopMoving = () => {
+    const discretedAngle = Math.round(angleValue / 45) * 45;
+    setAngleValue(discretedAngle);
     setIsDraggable(false);
   };
 
