@@ -37,9 +37,6 @@ const ArrowComponent = ({ x, y, onTurn, backgroundColor, borderColor }) => {
 
     if (isDraggable) {
       let newAngleValue = calculateCurrentAngle(event) - initialAngle;
-      if (newAngleValue - Math.floor(newAngleValue / 15) * 15 > 0) {
-        newAngleValue += 15;
-      }
       if (newAngleValue < 0) {
         newAngleValue += 360;
       }
