@@ -1,6 +1,12 @@
 import { LineComponent } from "./LineComponent";
 
-const GridComponent = ({ fieldHeight, fieldWidth, cellHeight, cellWidth }) => {
+const GridComponent = ({
+  fieldHeight,
+  fieldWidth,
+  cellHeight,
+  cellWidth,
+  color,
+}) => {
   let horizontalCoordinates = [];
   let verticalCoordinates = [];
 
@@ -19,8 +25,8 @@ const GridComponent = ({ fieldHeight, fieldWidth, cellHeight, cellWidth }) => {
           <LineComponent
             key={height}
             points={[0, height, fieldWidth, height]}
-            backgroundColor="blue"
-            borderColor="red"
+            backgroundColor="none"
+            borderColor={color}
           />
         );
       })}
@@ -29,8 +35,8 @@ const GridComponent = ({ fieldHeight, fieldWidth, cellHeight, cellWidth }) => {
           <LineComponent
             key={width}
             points={[width, 0, width, fieldHeight]}
-            backgroundColor="blue"
-            borderColor="red"
+            backgroundColor="none"
+            borderColor={color}
           />
         );
       })}
