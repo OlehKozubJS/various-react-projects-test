@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { SVGFieldComponent, ArrowComponent } from "./SVGComponents";
+import { SVGFieldComponent, ArrowComponent, Parable } from "./SVGComponents";
 
 const App = () => {
   const [isArrowComponent, setIsArrowComponent] = useState(false);
@@ -33,6 +33,7 @@ const App = () => {
             borderColor={"blue"}
           />
         )}
+        <Parable />
       </SVGFieldComponent>
       <br />
       <button
