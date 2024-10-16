@@ -39,10 +39,18 @@ const App = () => {
           />
         )}
         <GridComponent
+          cellHeight={scale / 10}
+          cellWidth={scale / 10}
+          fieldHeight={600}
+          fieldWidth={600}
+          color="rgb(150, 150, 200)"
+        />
+        <GridComponent
           cellHeight={scale}
           cellWidth={scale}
           fieldHeight={600}
           fieldWidth={600}
+          color="rgb(100, 100, 200)"
         />
         <Parable scale={scale} />
       </SVGFieldComponent>
