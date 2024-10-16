@@ -6,6 +6,7 @@ import { TurtleComponent } from "./TurtleComponent";
 import { ReversedTurtleComponent } from "./ReversedTurtleComponent";
 import { GridComponent } from "./GridComponent";
 import { ArrowComponent } from "./ArrowComponent";
+import { Parable } from "./Parable";
 
 import {
   sinFunc,
