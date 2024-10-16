@@ -40,7 +40,7 @@ const App = () => {
         onClick={isArrowComponent ? closeArrowComponent : openArrowComponent}
       >
         {isArrowComponent ? "close arrow component" : "open arrow component"}
-      </button>{" "}
+      </button>
       {isArrowComponent && `angle value: ${angle}`}
     </div>
   );
