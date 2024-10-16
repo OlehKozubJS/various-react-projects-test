@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-import { SVGFieldComponent, ArrowComponent, Parable } from "./SVGComponents";
+import {
+  SVGFieldComponent,
+  ArrowComponent,
+  GridComponent,
+  Parable,
+} from "./SVGComponents";
 
 const App = () => {
   const [isArrowComponent, setIsArrowComponent] = useState(false);
@@ -10,12 +15,12 @@ const App = () => {
   const closeArrowComponent = () => {
     setIsArrowComponent(false);
   };
-
   const [angle, setAngle] = useState(0);
-
   const handleTurn = (value) => {
     setAngle(value);
   };
+
+  const scale = 100;
 
   return (
     <div>
@@ -33,7 +38,13 @@ const App = () => {
             borderColor={"blue"}
           />
         )}
-        <Parable />
+        <GridComponent
+          cellHeight={scale}
+          cellWidth={scale}
+          fieldHeight={600}
+          fieldWidth={600}
+        />
+        <Parable scale={scale} />
       </SVGFieldComponent>
       <br />
       <button

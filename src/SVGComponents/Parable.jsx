@@ -1,10 +1,10 @@
 import { LineComponent } from "./LineComponent";
 
-const Parable = () => {
+const Parable = ({ scale }) => {
   let coordinates = [];
-  for (let x = -10; x <= 10; x += 0.01) {
+  for (let x = -10; x <= 10; x += scale) {
     const y = Math.pow(x, 2);
-    coordinates = [...coordinates, 300 + x * 100, 300 - y * 100];
+    coordinates = [...coordinates, 300 + x / scale, 300 - y / scale];
   }
 
   return (
