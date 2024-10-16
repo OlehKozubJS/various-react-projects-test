@@ -20,7 +20,7 @@ const App = () => {
     setAngle(value);
   };
 
-  const scale = 25;
+  const scale = 18;
 
   return (
     <div>
