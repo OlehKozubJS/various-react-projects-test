@@ -44,7 +44,7 @@ const App = () => {
           fieldHeight={600}
           fieldWidth={600}
         />
-        <Parable scale={scale} />
+        <Parable scale={1 / scale / 2} />
       </SVGFieldComponent>
       <br />
       <button
