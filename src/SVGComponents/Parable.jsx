@@ -6,8 +6,8 @@ const Parable = ({ scale }) => {
     if (x * x > 16) {
       continue;
     }
-    const y1 = Math.pow(16 - x * x, 1 / 2);
-    const y2 = (-y1 * x) / 4;
+    const y1 = Math.pow(16 - x * x, 1 / 2) + Math.floor(Math.random() * 2);
+    const y2 = (-y1 * x) / 4 + (Math.floor(Math.random() * 2) * x) / 100;
     coordinates = [
       ...coordinates,
       300 + x * scale,
