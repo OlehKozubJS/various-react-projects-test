@@ -27,8 +27,9 @@ const App = () => {
   const closeParable = () => {
     setIsParable(false);
   };
-
   const scale = 60;
+
+  const [is]
 
   return (
     <div>
@@ -60,7 +61,7 @@ const App = () => {
           fieldWidth={600}
           color="rgb(100, 100, 200)"
         />
-        <Parable scale={scale} />
+        {isParable && <Parable scale={scale} />}
       </SVGFieldComponent>
       <br />
       <button
@@ -73,6 +74,10 @@ const App = () => {
       <br />
       <button type="button" onClick={isParable ? closeParable : openParable}>
         {isParable ? "Close parable" : "Open parable"}
+      </button>
+      <br />
+      <button>
+        {is}
       </button>
     </div>
   );
