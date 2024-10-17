@@ -3,8 +3,18 @@ import { LineComponent } from "./LineComponent";
 const Parable = ({ scale }) => {
   let coordinates = [];
   for (let x = -10; x <= 10; x += 1 / scale) {
-    const y = Math.sqrt(Math.abs(x * 1));
-    coordinates = [...coordinates, 300 + x * scale, 300 - y * scale];
+    if (x * x < 1) {
+      continue;
+    }
+    const y1 = Math.pow(1 - x * x, 1 / 2);
+    const y2 = -y1;
+    coordinates = [
+      ...coordinates,
+      300 + x * scale,
+      300 - y1 * scale,
+      300 + x * scale,
+      300 - y2 * scale,
+    ];
   }
 
   return (
