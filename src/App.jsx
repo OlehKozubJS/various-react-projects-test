@@ -108,7 +108,8 @@ const App = () => {
             {isGridComponent ? "Close " : "Open "}grid component
           </button>
         </>
-      )}{" "}
+      )}
+      <br />
       <button type="button" onClick={isSVG ? closeSVG : openSVG}>
         {isSVG ? "Close" : "Open"} vector graphic field
       </button>
