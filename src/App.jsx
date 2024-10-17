@@ -47,9 +47,6 @@ const App = () => {
 
   return (
     <>
-      <button type="button" onClick={isSVG ? closeSVG : openSVG}>
-        {isSVG ? "Close" : "Open"} vector graphic field
-      </button>
       {isSVG && (
         <>
           <SVGFieldComponent
@@ -111,7 +108,10 @@ const App = () => {
             {isGridComponent ? "Close " : "Open "}grid component
           </button>
         </>
-      )}
+      )}{" "}
+      <button type="button" onClick={isSVG ? closeSVG : openSVG}>
+        {isSVG ? "Close" : "Open"} vector graphic field
+      </button>
     </>
   );
 };
