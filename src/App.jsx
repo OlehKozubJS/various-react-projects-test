@@ -20,6 +20,14 @@ const App = () => {
     setAngle(value);
   };
 
+  const [isParable, setIsParable] = useState(false);
+  const openParable = () => {
+    setIsParable(true);
+  };
+  const closeParable = () => {
+    setIsParable(false);
+  };
+
   const scale = 60;
 
   return (
@@ -59,9 +67,13 @@ const App = () => {
         type="button"
         onClick={isArrowComponent ? closeArrowComponent : openArrowComponent}
       >
-        {isArrowComponent ? "close arrow component" : "open arrow component"}
+        {isArrowComponent ? "Close arrow component" : "Open arrow component"}
       </button>
       {isArrowComponent && `angle value: ${angle}`}
+      <br />
+      <button type="button" onClick={isParable ? closeParable : openParable}>
+        {isParable ? "Close parable" : "Open parable"}
+      </button>
     </div>
   );
 };
