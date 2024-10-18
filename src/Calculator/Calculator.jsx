@@ -4,21 +4,23 @@ import css from "./Calculator.module.css";
 const Calculator = () => {
   const [expression, setExpression] = useState("");
 
-  const enterData = (character) => {
-    setExpression(expression + character);
+  const enterData = (event) => {
+    const newExpression = expression + event.target.value;
+    setExpression(newExpression);
   };
 
   const calculate = () => {
-    setExpression(expression + "=" + eval(expression));
+    const newExpression = expression + "=" + eval(expression);
+    setExpression(newExpression);
   };
 
   const backSpace = () => {
     const newExpression = [...expression].splice(expression.length - 1, 1);
-    setExpression("");
+    setExpression(newExpression);
   };
 
   const clear = () => {
-    setExpression("");
+    setExpression(newExpression);
   };
 
   return (
@@ -27,66 +29,66 @@ const Calculator = () => {
       <div>{expression}</div>
       <div>
         <div>
-          <button type="button" onClick={enterData("1")}>
+          <button type="button" onClick={enterData} value="1">
             1
           </button>
-          <button type="button" onClick={enterData("2")}>
+          <button type="button" onClick={enterData} value="2">
             2
           </button>
-          <button type="button" onClick={enterData("3")}>
+          <button type="button" onClick={enterData} value="3">
             3
           </button>
-          <button type="button" onClick={enterData("4")}>
+          <button type="button" onClick={enterData} value="4">
             4
           </button>
-          <button type="button" onClick={enterData("5")}>
+          <button type="button" onClick={enterData} value="5">
             5
           </button>
-          <button type="button" onClick={enterData("6")}>
+          <button type="button" onClick={enterData} value="6">
             6
           </button>
-          <button type="button" onClick={enterData("7")}>
+          <button type="button" onClick={enterData} value="7">
             7
           </button>
-          <button type="button" onClick={enterData("8")}>
+          <button type="button" onClick={enterData} value="8">
             8
           </button>
-          <button type="button" onClick={enterData("9")}>
+          <button type="button" onClick={enterData} value="9">
             9
           </button>
-          <button type="button" onClick={enterData(".")}>
+          <button type="button" onClick={enterData} value=".">
             .
           </button>
-          <button type="button" onClick={enterData("0")}>
+          <button type="button" onClick={enterData} value="0">
             0
           </button>
-          <button type="button" onClick={backSpace()}>
+          <button type="button" onClick={backSpace}>
             {"<="}
           </button>
         </div>
         <div>
-          <button type="button" onClick={enterData("(")}>
+          <button type="button" onClick={enterData} value="(">
             {"("}
           </button>
-          <button type="button" onClick={enterData(")")}>
+          <button type="button" onClick={enterData} value=")">
             {")"}
           </button>
-          <button type="button" onClick={enterData("+")}>
+          <button type="button" onClick={enterData} value="+">
             +
           </button>
-          <button type="button" onClick={enterData("-")}>
+          <button type="button" onClick={enterData} value="-">
             -
           </button>
-          <button type="button" onClick={enterData("*")}>
+          <button type="button" onClick={enterData} value="*">
             *
           </button>
-          <button type="button" onClick={enterData("/")}>
+          <button type="button" onClick={enterData} value="/">
             /
           </button>
-          <button type="button" onClick={calculate()}>
+          <button type="button" onClick={calculate}>
             =
           </button>
-          <button type="button" onClick={clear()}>
+          <button type="button" onClick={clear}>
             C
           </button>
         </div>
