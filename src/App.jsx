@@ -7,6 +7,8 @@ import {
   Parable,
 } from "./SVGComponents";
 
+import { Calculator } from "./Calculator";
+
 const App = () => {
   const [isSVG, setIsSVG] = useState(false);
   const openSVG = () => {
@@ -113,6 +115,7 @@ const App = () => {
       <button type="button" onClick={isSVG ? closeSVG : openSVG}>
         {isSVG ? "Close" : "Open"} vector graphic field
       </button>
+      <Calculator />
     </>
   );
 };
