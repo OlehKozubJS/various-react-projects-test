@@ -115,6 +115,7 @@ const App = () => {
       <button type="button" onClick={isSVG ? closeSVG : openSVG}>
         {isSVG ? "Close" : "Open"} vector graphic field
       </button>
+      <br />
       <Calculator />
     </>
   );
