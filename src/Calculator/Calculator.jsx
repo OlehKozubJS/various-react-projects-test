@@ -4,18 +4,27 @@ import css from "./Calculator.module.css";
 const Calculator = () => {
   const [expression, setExpression] = useState("");
 
-  const enterData = () => {};
+  const enterData = (character) => {
+    setExpression(expression + character);
+  };
 
-  const calculate = () => {};
+  const calculate = () => {
+    setExpression(expression + "=" + eval(expression));
+  };
 
-  const backSpace = () => {};
+  const backSpace = () => {
+    const newExpression = [...expression].splice(expression.length - 1, 1);
+    setExpression("");
+  };
 
-  const clear = () => {};
+  const clear = () => {
+    setExpression("");
+  };
 
   return (
     <>
       This is Calulator
-      <div></div>
+      <div>{expression}</div>
       <div>
         <div>
           <button type="button" onClick={enterData("1")}>
