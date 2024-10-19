@@ -16,12 +16,15 @@ const Calculator = () => {
 
   const enterData = (event) => {
     setResult("");
+    if (cursorIndex < expression.length) {
+      setCursorIndex(cursorIndex + 1);
+    }
     const newExpression = insertCharacter(
       expression,
-      cursorIndex,
+      cursorIndex - 1,
       event.target.value
     );
-    turnCursorRight();
+
     setExpression(newExpression);
   };
 
