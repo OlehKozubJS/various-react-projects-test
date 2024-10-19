@@ -21,7 +21,9 @@ const Calculator = () => {
       cursorIndex,
       event.target.value
     );
-    turnCursorRight();
+    if (cursorIndex < expression.length) {
+      setCursorIndex(cursorIndex + 1);
+    }
     setExpression(newExpression);
   };
 
@@ -54,6 +56,7 @@ const Calculator = () => {
       setCursorIndex(cursorIndex + 1);
     }
   };
+
   useEffect(() => {
     setExpressionAndCursor(
       insertCharacter(expression, cursorIndex, result ? "" : "_")
