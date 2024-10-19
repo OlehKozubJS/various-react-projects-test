@@ -2,19 +2,22 @@ import { useState } from "react";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
-  const [expression, setExpression] = useState("");
+  const [expression, setExpression] = useState("_");
+  const [result, setResult] = useState("");
+  const [cursorIndex, setCursorIndex] = useState(0);
 
   const enterData = (event) => {
+    setResult("");
     const newExpression = expression + event.target.value;
     setExpression(newExpression);
   };
 
   const calculate = () => {
-    const newExpression = expression + "=" + eval(expression);
-    setExpression(newExpression);
+    setResult("=" + eval(expression));
   };
 
   const backSpace = () => {
+    setResult("");
     let newExpression = [...expression];
     newExpression.splice(expression.length - 1, 1);
     newExpression = newExpression.join("");
@@ -22,13 +25,21 @@ const Calculator = () => {
   };
 
   const clear = () => {
+    setResult("");
     setExpression("0");
   };
+
+  const turnCursorLeft = () => {};
+
+  const turnCursorRight = () => {};
 
   return (
     <>
       This is Calulator
-      <div>{expression}</div>
+      <div>
+        {expression}
+        {result}
+      </div>
       <div>
         <div>
           <button type="button" onClick={enterData} value="1">
