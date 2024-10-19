@@ -15,14 +15,15 @@ const Calculator = () => {
   };
 
   const backSpace = () => {
-    const newExpression = [...expression.split("")]
-      .splice(expression.length - 1, 1)
-      .join("");
+    let newExpression = [...expression.split("")];
+    newExpression.splice(expression.length - 1, 1);
+    newExpression = newExpression.join("");
+    console.log(newExpression);
     setExpression(newExpression);
   };
 
   const clear = () => {
-    setExpression(newExpression);
+    setExpression("0");
   };
 
   return (
