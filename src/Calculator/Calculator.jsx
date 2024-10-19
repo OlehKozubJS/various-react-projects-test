@@ -34,8 +34,9 @@ const Calculator = () => {
   };
 
   const clear = () => {
+    setCursorIndex(0);
     setResult("");
-    setExpression("This is Calulator");
+    setExpression("");
   };
 
   const turnCursorLeft = () => {
