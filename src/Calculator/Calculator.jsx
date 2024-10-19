@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 
-import { replaceCharacter } from "./replaceCharacter";
+import {
+  insertCharacter,
+  deleteCharacter,
+  replaceCharacter,
+} from "./character_functions";
 
 import css from "./Calculator.module.css";
 
@@ -24,7 +28,7 @@ const Calculator = () => {
     if (result) {
       setResult("");
     } else {
-      setExpression(replaceCharacter(expression, expression.length - 1, ""));
+      setExpression(rdeleteCharacter(expression, expression.length - 1, ""));
     }
   };
 
