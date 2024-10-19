@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/profound-svg-graphics-test/static/css/main.0e090b84.css",
-    "main.js": "/profound-svg-graphics-test/static/js/main.96e8681a.js",
+    "main.js": "/profound-svg-graphics-test/static/js/main.ff1d9195.js",
     "index.html": "/profound-svg-graphics-test/index.html",
     "main.0e090b84.css.map": "/profound-svg-graphics-test/static/css/main.0e090b84.css.map",
-    "main.96e8681a.js.map": "/profound-svg-graphics-test/static/js/main.96e8681a.js.map"
+    "main.ff1d9195.js.map": "/profound-svg-graphics-test/static/js/main.ff1d9195.js.map"
   },
   "entrypoints": [
     "static/css/main.0e090b84.css",
-    "static/js/main.96e8681a.js"
+    "static/js/main.ff1d9195.js"
   ]
 }
