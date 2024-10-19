@@ -17,6 +17,7 @@ const Calculator = () => {
   const backSpace = () => {
     let newExpression = [...expression];
     newExpression.splice(expression.length - 1, 1);
+    newExpression = newExpression.join("");
     setExpression(newExpression);
   };
 
