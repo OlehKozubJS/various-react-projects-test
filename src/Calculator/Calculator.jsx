@@ -50,8 +50,10 @@ const Calculator = () => {
     }
   };
   useEffect(() => {
-    setExpressionAndCursor(replaceCharacter(expression, cursorIndex, "_"));
-  }, [expression, cursorIndex]);
+    setExpressionAndCursor(
+      insertCharacter(expression, cursorIndex, result ? "" : "_")
+    );
+  }, [expression, cursorIndex, result]);
 
   return (
     <>
