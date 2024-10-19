@@ -21,6 +21,7 @@ const Calculator = () => {
       cursorIndex,
       event.target.value
     );
+    turnCursorRight();
     setExpression(newExpression);
   };
 
