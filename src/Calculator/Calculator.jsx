@@ -34,6 +34,7 @@ const Calculator = () => {
       setResult("");
     } else {
       setExpression(deleteCharacter(expression, expression.length - 1));
+      turnCursorLeft();
     }
   };
 
