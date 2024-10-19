@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
@@ -42,7 +42,10 @@ const Calculator = () => {
   const turnCursorRight = () => {
     setCursorIndex(cursorIndex + 1);
   };
-
+  useEffect(() => {
+    let newExpression = [...expression];
+    newExpression.splice(cursorIndex, 0, "_");
+  }, [expression, cursorIndex]);
   return (
     <>
       <div>
