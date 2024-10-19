@@ -1,6 +1,6 @@
-const deleteCharacter = (string, index) => {
+const deleteCharacter = (string, index, character) => {
   const newString = [...string];
-  newString.splice(index, 1);
+  newString.splice(index, 1, character);
   return newString;
 };
 
