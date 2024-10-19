@@ -93,6 +93,12 @@ const Calculator = () => {
           <button type="button" onClick={clear}>
             C
           </button>
+          <button type="button" onClick={turnCursorLeft}>
+            Left
+          </button>
+          <button type="button" onClick={turnCursorRight}>
+            Right
+          </button>
         </div>
       </div>
     </>
