@@ -68,6 +68,7 @@ const Calculator = () => {
         {expressionAndCursor}
         {result}
       </div>
+      <div>{cursorIndex}</div>
       <div>
         <div>
           <button type="button" onClick={enterData} value="1">
