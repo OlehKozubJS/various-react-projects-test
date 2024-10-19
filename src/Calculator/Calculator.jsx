@@ -21,9 +21,7 @@ const Calculator = () => {
       cursorIndex,
       event.target.value
     );
-    if (cursorIndex < expression.length) {
-      setCursorIndex(cursorIndex + 1);
-    }
+    turnCursorRight();
     setExpression(newExpression);
   };
 
