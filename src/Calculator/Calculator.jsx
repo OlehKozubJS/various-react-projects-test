@@ -16,7 +16,7 @@ const Calculator = () => {
   };
 
   const calculate = () => {
-    setResult("=" + eval(expression.replace("_", "")));
+    setResult("=" + eval(expression));
   };
 
   const backSpace = () => {
