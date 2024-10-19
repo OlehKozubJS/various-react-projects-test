@@ -24,10 +24,7 @@ const Calculator = () => {
     if (result) {
       setResult("");
     } else {
-      let newExpression = [...expression];
-      newExpression.splice(expression.length - 1, 1);
-      newExpression = newExpression.join("");
-      setExpression(newExpression);
+      setExpression(replaceCharacter(expression, expression.length - 1, ""));
     }
   };
 
