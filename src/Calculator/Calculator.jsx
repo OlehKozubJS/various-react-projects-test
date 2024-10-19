@@ -33,9 +33,9 @@ const Calculator = () => {
   };
 
   const clear = () => {
-    setCursorIndex(0);
-    setResult("");
     setExpression("");
+    setResult("");
+    setCursorIndex(0);
   };
 
   const turnCursorLeft = () => {
