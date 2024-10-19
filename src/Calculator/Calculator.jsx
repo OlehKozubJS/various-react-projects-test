@@ -2,9 +2,9 @@ import { useState } from "react";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
-  const [expression, setExpression] = useState("_");
-  const [expressionAndCursor, setExpressionAndCursor] = useState("");
+  const [expression, setExpression] = useState("");
   const [result, setResult] = useState("");
+  const [expressionAndCursor, setExpressionAndCursor] = useState("");
   const [cursorIndex, setCursorIndex] = useState(0);
 
   const enterData = (event) => {
