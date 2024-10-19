@@ -38,16 +38,18 @@ const Calculator = () => {
   };
 
   const turnCursorLeft = () => {
-    setCursorIndex(cursorIndex - 1);
+    if (cursorIndex > 0) {
+      setCursorIndex(cursorIndex - 1);
+    }
   };
 
   const turnCursorRight = () => {
-    setCursorIndex(cursorIndex + 1);
+    if (cursorIndex < expression.length) {
+      setCursorIndex(cursorIndex + 1);
+    }
   };
   useEffect(() => {
-    let newExpression = [...expression];
-    newExpression.splice(cursorIndex, 0, "_");
-    setExpressionAndCursor(newExpression.join(""));
+    setExpressionAndCursor(replaceCharacter(expression, cursorIndex, "_"));
   }, [expression, cursorIndex]);
 
   return (
