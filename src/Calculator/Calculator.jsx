@@ -8,7 +8,9 @@ const Calculator = () => {
 
   const enterData = (event) => {
     setResult("");
-    const newExpression = expression + event.target.value;
+    const newExpression =
+      (expression === "This is Calulator" ? "" : expression) +
+      event.target.value;
     setExpression(newExpression);
   };
 
@@ -29,7 +31,7 @@ const Calculator = () => {
 
   const clear = () => {
     setResult("");
-    setExpression("0");
+    setExpression("This is Calulator");
   };
 
   const turnCursorLeft = () => {};
@@ -38,7 +40,6 @@ const Calculator = () => {
 
   return (
     <>
-      This is Calulator
       <div>
         {expression}
         {result}
