@@ -13,15 +13,18 @@ const Calculator = () => {
   };
 
   const calculate = () => {
-    setResult("=" + eval(expression));
+    setResult("=" + eval(expression.replace("_", "")));
   };
 
   const backSpace = () => {
-    setResult("");
-    let newExpression = [...expression];
-    newExpression.splice(expression.length - 1, 1);
-    newExpression = newExpression.join("");
-    setExpression(newExpression);
+    if (result) {
+      setResult("");
+    } else {
+      let newExpression = [...expression];
+      newExpression.splice(expression.length - 1, 1);
+      newExpression = newExpression.join("");
+      setExpression(newExpression);
+    }
   };
 
   const clear = () => {
