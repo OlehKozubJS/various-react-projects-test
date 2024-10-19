@@ -28,7 +28,7 @@ const Calculator = () => {
     if (result) {
       setResult("");
     } else {
-      setExpression(rdeleteCharacter(expression, expression.length - 1, ""));
+      setExpression(rdeleteCharacter(expression, expression.length - 1));
     }
   };
 
