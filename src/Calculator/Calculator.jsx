@@ -12,9 +12,7 @@ const Calculator = () => {
 
   const enterData = (event) => {
     setResult("");
-    const newExpression =
-      (expression === "This is Calulator" ? "" : expression) +
-      event.target.value;
+    const newExpression = expression + event.target.value;
     setExpression(newExpression);
   };
 
