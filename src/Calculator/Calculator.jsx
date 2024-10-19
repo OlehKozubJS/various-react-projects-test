@@ -45,7 +45,9 @@ const Calculator = () => {
   useEffect(() => {
     let newExpression = [...expression];
     newExpression.splice(cursorIndex, 0, "_");
+    setExpressionAndCursor(newExpression.join(""));
   }, [expression, cursorIndex]);
+
   return (
     <>
       <div>
