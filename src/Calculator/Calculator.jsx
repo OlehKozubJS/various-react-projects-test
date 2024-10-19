@@ -16,7 +16,11 @@ const Calculator = () => {
 
   const enterData = (event) => {
     setResult("");
-    const newExpression = expression + event.target.value;
+    const newExpression = insertCharacter(
+      expression,
+      cursorIndex,
+      event.target.value
+    );
     setExpression(newExpression);
   };
 
