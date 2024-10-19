@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+
+import { replaceCharacter } from "./replaceCharacter";
+
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
