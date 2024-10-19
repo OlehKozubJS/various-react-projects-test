@@ -55,7 +55,7 @@ const Calculator = () => {
   return (
     <>
       <div>
-        {expression}
+        {expressionAndCursor}
         {result}
       </div>
       <div>
