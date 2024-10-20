@@ -9,6 +9,7 @@ import {
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
+  const [character, setCharacter] = useState();
   const [expression, setExpression] = useState("");
   const [result, setResult] = useState("");
   const [expressionAndCursor, setExpressionAndCursor] = useState("");
@@ -52,6 +53,8 @@ const Calculator = () => {
       setCursorIndex(cursorIndex + 1);
     }
   };
+
+  useEffect(() => {}, []);
 
   useEffect(() => {
     setExpressionAndCursor(
