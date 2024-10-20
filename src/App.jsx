@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { SVGTest } from "./SVGTest";
 
 import { Calculator } from "./Calculator";
