@@ -17,9 +17,7 @@ const Calculator = () => {
 
   const enterData = (event) => {
     setResult("");
-    setExpression(
-      insertCharacter(expression, cursorIndex - 1, event.target.value)
-    );
+    setCharacter(event.target.value);
     turnCursorRight();
   };
 
@@ -54,7 +52,9 @@ const Calculator = () => {
     }
   };
 
-  useEffect(() => {}, [character]);
+  useEffect(() => {
+    setExpression(insertCharacter(expression, cursorIndex - 1, character));
+  }, [character]);
 
   useEffect(() => {
     setExpressionAndCursor(
