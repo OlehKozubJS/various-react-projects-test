@@ -54,7 +54,7 @@ const Calculator = () => {
     }
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {}, [character]);
 
   useEffect(() => {
     setExpressionAndCursor(
