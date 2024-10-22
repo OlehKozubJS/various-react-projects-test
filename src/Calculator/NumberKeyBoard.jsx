@@ -14,9 +14,9 @@ const NumberKeyboard = ({ onClick, backSpace }) => {
           </CalculatorButton>
         );
       })}
-      <button type="button" onClick={backSpace}>
+      <CalculatorButton type="button" onClick={backSpace}>
         {"<="}
-      </button>
+      </CalculatorButton>
     </div>
   );
 };
