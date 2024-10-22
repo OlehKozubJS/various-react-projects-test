@@ -2,7 +2,7 @@ import { CalculatorButton } from "./CalculatorButton";
 
 import css from "./Calculator.module.css";
 
-const NumberKeyboard = ({ onClick, backSpace }) => {
+const NumberKeyBoard = ({ onClick, backSpace }) => {
   const enterData = (event) => {
     onClick(event.target.value);
   };
@@ -21,4 +21,4 @@ const NumberKeyboard = ({ onClick, backSpace }) => {
   );
 };
 
-export { NumberKeyboard };
+export { NumberKeyBoard };
