@@ -77,7 +77,7 @@ const Calculator = () => {
       </div>
       <div>{cursorIndex}</div>
       <div>
-        <NumberKeyboard onClick={enterNKdata} backSpace={enterData} />
+        <NumberKeyboard onClick={enterNKdata} backSpace={backSpace} />
         <div>
           <button type="button" onClick={enterData} value="(">
             {"("}
