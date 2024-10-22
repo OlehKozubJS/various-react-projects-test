@@ -11,7 +11,7 @@ const Calculator = () => {
   const [character, setCharacter] = useState();
   const [expression, setExpression] = useState("");
   const [result, setResult] = useState("");
-  const [expressionAndCursor, setExpressionAndCursor] = useState("");
+  const [finalExpression, setFinalExpression] = useState("");
   const [cursorIndex, setCursorIndex] = useState(0);
 
   const enterData = (value) => {
@@ -52,17 +52,14 @@ const Calculator = () => {
   };
 
   useEffect(() => {
-    setExpressionAndCursor(
-      insertCharacter(expression, cursorIndex, result ? "" : "_")
-    );
+    const newExpression =
+      insertCharacter(expression, cursorIndex, result ? "" : "_") + result;
+    setFinalExpression(newExpression);
   }, [expression, cursorIndex, result]);
 
   return (
     <>
-      <div>
-        {expressionAndCursor}
-        {result}
-      </div>
+      <div>{finalExpression}</div>
       <div>{cursorIndex}</div>
       <div>
         <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
