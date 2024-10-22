@@ -22,3 +22,11 @@
   border-bottom: 5px solid blue;
   border-left: 5px solid blue;
 }
+
+.NumberKeyBoard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
