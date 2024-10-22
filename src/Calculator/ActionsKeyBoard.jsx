@@ -8,10 +8,14 @@ const ActionsKeyBoard = ({ onClick, backSpace }) => {
   };
 
   return (
-    <div className={css.NumberKeyBoard}>
+    <div className={`${css.KeyBoard} ${css.ActionsKeyBoard}`}>
       {"()+-*/".split("").map((item) => {
         return (
-          <CalculatorButton key={item} onClick={enterData}>
+          <CalculatorButton
+            key={item}
+            onClick={enterData}
+            style="ActionsButton"
+          >
             {item}
           </CalculatorButton>
         );
