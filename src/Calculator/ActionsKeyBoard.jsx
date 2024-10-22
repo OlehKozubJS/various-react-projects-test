@@ -11,11 +11,7 @@ const ActionsKeyBoard = ({ onClick, backSpace }) => {
     <div className={`${css.KeyBoard} ${css.ActionsKeyBoard}`}>
       {"()+-*/".split("").map((item) => {
         return (
-          <CalculatorButton
-            key={item}
-            onClick={enterData}
-            style="ActionsButton"
-          >
+          <CalculatorButton key={item} onClick={enterData} style="ActionButton">
             {item}
           </CalculatorButton>
         );
