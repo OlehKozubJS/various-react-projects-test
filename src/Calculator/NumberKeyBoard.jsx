@@ -1,7 +1,7 @@
 import { CalculatorButton } from "./CalculatorButton";
 
 const NumberKeyboard = ({ onClick, backSpace }) => {
-  enterData = (event) => {
+  const enterData = (event) => {
     onClick(event.target.value);
   };
 
