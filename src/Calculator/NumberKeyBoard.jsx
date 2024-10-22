@@ -8,7 +8,7 @@ const NumberKeyBoard = ({ onClick, backSpace }) => {
   };
 
   return (
-    <div className={css.NumberKeyBoard}>
+    <div className={`${css.NumberKeyBoard} ${css.NumberButton}`}>
       {"123456789.0".split("").map((item) => {
         return (
           <CalculatorButton key={item} onClick={enterData}>
