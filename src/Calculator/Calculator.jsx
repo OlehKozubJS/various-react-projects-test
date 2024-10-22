@@ -17,9 +17,9 @@ const Calculator = () => {
   const [expressionAndCursor, setExpressionAndCursor] = useState("");
   const [cursorIndex, setCursorIndex] = useState(0);
 
-  const enterData = (event) => {
+  const enterData = (value) => {
     setResult("");
-    setCharacter(event.target.value);
+    setExpression(insertCharacter(cursorIndex, value));
   };
 
   const enterNKdata = (value) => {
@@ -57,12 +57,12 @@ const Calculator = () => {
       setCursorIndex(cursorIndex + 1);
     }
   };
-
+  /*
   useEffect(() => {
     setExpression(insertCharacter(expression, cursorIndex - 1, character));
     turnCursorRight();
   }, [character]);
-
+*/
   useEffect(() => {
     setExpressionAndCursor(
       insertCharacter(expression, cursorIndex, result ? "" : "_")
