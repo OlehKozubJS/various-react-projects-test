@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 
 import { NumberKeyboard } from "./NumberKeyBoard";
 
-import {
-  insertCharacter,
-  deleteCharacter,
-  replaceCharacter,
-} from "./character_functions";
+import { insertCharacter, deleteCharacter } from "./character_functions";
 
 import css from "./Calculator.module.css";
 
