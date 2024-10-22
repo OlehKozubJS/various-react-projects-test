@@ -52,8 +52,11 @@ const Calculator = () => {
   };
 
   useEffect(() => {
-    const newExpression =
-      insertCharacter(expression, cursorIndex, result ? "" : "_") + result;
+    const newExpression = insertCharacter(
+      expression,
+      cursorIndex,
+      result ? "" : "_"
+    );
 
     let finalExpressionArray = [];
     let finalExpressionString = "";
@@ -63,10 +66,14 @@ const Calculator = () => {
         finalExpressionArray = [...finalExpressionArray, finalExpressionString];
         finalExpressionString = "";
       }
-      console.log(finalExpressionString);
-      console.log(finalExpressionArray);
     }
-    finalExpressionArray = [...finalExpressionArray, finalExpressionString];
+
+    finalExpressionArray = [
+      ...finalExpressionArray,
+      finalExpressionString,
+      result,
+    ];
+
     setFinalExpression(finalExpressionArray);
   }, [expression, cursorIndex, result]);
 
