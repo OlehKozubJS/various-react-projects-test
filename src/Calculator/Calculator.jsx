@@ -10,7 +10,7 @@ import css from "./Calculator.module.css";
 const Calculator = () => {
   const [expression, setExpression] = useState("");
   const [result, setResult] = useState("");
-  const [finalExpression, setFinalExpression] = useState("");
+  const [finalExpression, setFinalExpression] = useState([]);
   const [cursorIndex, setCursorIndex] = useState(0);
 
   const enterData = (value) => {
@@ -53,7 +53,9 @@ const Calculator = () => {
 
   useEffect(() => {
     const newExpression =
-      insertCharacter(expression, cursorIndex, result ? "" : "_") + result;
+      insertCharacter(expression, cursorIndex, result ? "" : "_") +
+      " " +
+      result;
     setFinalExpression(newExpression);
   }, [expression, cursorIndex, result]);
 
