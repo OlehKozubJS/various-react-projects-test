@@ -12,3 +12,5 @@ const CalculatorButton = ({ onClick, children }) => {
     </button>
   );
 };
+
+export { CalculatorButton };
