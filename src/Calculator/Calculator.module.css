@@ -6,8 +6,6 @@
   height: 50px;
   width: 50px;
 
-  border-top: 5px solid blue;
-  border-right: 5px solid blue;
   border-bottom: 5px solid white;
   border-left: 5px solid white;
   background: none;
@@ -21,6 +19,14 @@
 .CalculatorButton:active {
   border-top: 5px solid white;
   border-right: 5px solid white;
+}
+
+.NumberButton {
+  border-top: 5px solid blue;
+  border-right: 5px solid blue;
+}
+
+.NumberButton:active {
   border-bottom: 5px solid blue;
   border-left: 5px solid blue;
 }
