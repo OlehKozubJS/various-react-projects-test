@@ -1,4 +1,7 @@
 .CalculatorButton {
+  height: 20px;
+  width: 20px;
+
   border-top: blue;
   border-right: blue;
   border-bottom: white;
