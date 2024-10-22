@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 
-import { NumberKeyBoard } from "./NumberKeyBoard";
-
 import { insertCharacter, deleteCharacter } from "./character_functions";
+
+import { NumberKeyBoard } from "./NumberKeyBoard";
+import { ActionsKeyBoard } from "./ActionsKeyBoard";
 
 import css from "./Calculator.module.css";
 
@@ -14,11 +15,6 @@ const Calculator = () => {
   const [cursorIndex, setCursorIndex] = useState(0);
 
   const enterData = (value) => {
-    setResult("");
-    setExpression(insertCharacter(value, cursorIndex));
-  };
-
-  const enterNKdata = (value) => {
     setResult("");
     setExpression(insertCharacter(expression, cursorIndex, value));
     setCursorIndex(cursorIndex + 1);
@@ -69,26 +65,11 @@ const Calculator = () => {
       </div>
       <div>{cursorIndex}</div>
       <div>
-        <NumberKeyBoard onClick={enterNKdata} backSpace={backSpace} />
+        <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
+
+        <ActionsKeyBoard onClick={enterData} />
+
         <div>
-          <button type="button" onClick={enterData} value="(">
-            {"("}
-          </button>
-          <button type="button" onClick={enterData} value=")">
-            {")"}
-          </button>
-          <button type="button" onClick={enterData} value="+">
-            +
-          </button>
-          <button type="button" onClick={enterData} value="-">
-            -
-          </button>
-          <button type="button" onClick={enterData} value="*">
-            *
-          </button>
-          <button type="button" onClick={enterData} value="/">
-            /
-          </button>
           <button type="button" onClick={calculate}>
             =
           </button>
