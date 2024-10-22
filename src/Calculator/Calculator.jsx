@@ -36,7 +36,7 @@ const Calculator = () => {
     if (result) {
       setResult("");
     } else {
-      setExpression(deleteCharacter(expression, expression.length - 1));
+      setExpression(deleteCharacter(expression, cursorIndex - 1));
       turnCursorLeft();
     }
   };
@@ -58,12 +58,7 @@ const Calculator = () => {
       setCursorIndex(cursorIndex + 1);
     }
   };
-  /*
-  useEffect(() => {
-    setExpression(insertCharacter(expression, cursorIndex - 1, character));
-    turnCursorRight();
-  }, [character]);
-*/
+
   useEffect(() => {
     setExpressionAndCursor(
       insertCharacter(expression, cursorIndex, result ? "" : "_")
