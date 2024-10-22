@@ -8,7 +8,6 @@ import { ActionsKeyBoard } from "./ActionsKeyBoard";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
-  const [character, setCharacter] = useState();
   const [expression, setExpression] = useState("");
   const [result, setResult] = useState("");
   const [finalExpression, setFinalExpression] = useState("");
@@ -22,6 +21,7 @@ const Calculator = () => {
 
   const calculate = () => {
     setResult("=" + eval(expression));
+    setCursorIndex(expression.length);
   };
 
   const backSpace = () => {
