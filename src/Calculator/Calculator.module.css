@@ -31,6 +31,16 @@
   border-left: 5px solid blue;
 }
 
+.ActionButton {
+  border-top: 5px solid green;
+  border-right: 5px solid green;
+}
+
+.ActionButton:active {
+  border-bottom: 5px solid green;
+  border-left: 5px solid green;
+}
+
 .KeyBoard {
   display: flex;
   flex-wrap: wrap;
