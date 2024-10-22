@@ -62,7 +62,7 @@ const Calculator = () => {
     let finalExpressionString = "";
     for (let character of newExpression) {
       finalExpressionString += character;
-      if (finalExpressionString.length === 10) {
+      if (finalExpressionString.length === 20) {
         finalExpressionArray = [...finalExpressionArray, finalExpressionString];
         finalExpressionString = "";
       }
