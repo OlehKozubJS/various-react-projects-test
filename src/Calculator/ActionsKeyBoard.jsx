@@ -16,7 +16,6 @@ const ActionsKeyboard = ({ onClick, backSpace }) => {
           </CalculatorButton>
         );
       })}
-      <CalculatorButton onClick={backSpace}>◄</CalculatorButton>
     </div>
   );
 };
