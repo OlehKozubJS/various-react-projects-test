@@ -57,12 +57,14 @@ const Calculator = () => {
 
     let finalExpressionArray = [];
     let finalExpressionString = "";
-    for (let character of newExpression.split("")) {
+    for (let character of newExpression) {
       finalExpressionString += character;
       if (finalExpressionString.length === 10) {
         finalExpressionArray = [...finalExpressionArray, finalExpressionString];
         finalExpressionString = "";
       }
+      console.log(finalExpressionString);
+      console.log(finalExpressionArray);
     }
     finalExpressionArray = [...finalExpressionArray, finalExpressionString];
     setFinalExpression(finalExpressionArray);
@@ -70,7 +72,11 @@ const Calculator = () => {
 
   return (
     <>
-      <div>{finalExpression}</div>
+      <div>
+        {finalExpression.map((finalExpressionString) => {
+          return <p>{finalExpressionString}</p>;
+        })}
+      </div>
       <div>{cursorIndex}</div>
       <div>
         <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
