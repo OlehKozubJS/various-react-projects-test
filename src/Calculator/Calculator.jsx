@@ -104,7 +104,7 @@ const Calculator = () => {
             C
           </button>
           <button type="button" onClick={turnCursorLeft}>
-            Left
+            ▲►▼◄←↑→↓
           </button>
           <button type="button" onClick={turnCursorRight}>
             Right
