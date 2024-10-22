@@ -40,13 +40,13 @@ const Calculator = () => {
   };
 
   const turnCursorLeft = () => {
-    if (cursorIndex > 0) {
+    if (!result && cursorIndex > 0) {
       setCursorIndex(cursorIndex - 1);
     }
   };
 
   const turnCursorRight = () => {
-    if (cursorIndex < expression.length) {
+    if (!result && cursorIndex < expression.length) {
       setCursorIndex(cursorIndex + 1);
     }
   };
