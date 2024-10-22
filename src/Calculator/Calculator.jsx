@@ -19,12 +19,12 @@ const Calculator = () => {
 
   const enterData = (value) => {
     setResult("");
-    setExpression(insertCharacter(cursorIndex, value));
+    setExpression(insertCharacter(value, cursorIndex));
   };
 
   const enterNKdata = (value) => {
     setResult("");
-    setExpression(insertCharacter(cursorIndex, value));
+    setExpression(insertCharacter(expression, cursorIndex, value));
   };
 
   const calculate = () => {
