@@ -31,12 +31,14 @@
   border-left: 5px solid blue;
 }
 
-.NumberKeyBoard {
-  height: 250px;
-  width: 190px;
-
+.KeyBoard {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: space-evenly;
+}
+
+.NumberKeyBoard {
+  height: 250px;
+  width: 190px;
 }
