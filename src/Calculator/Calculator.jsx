@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { NumberKeyboard } from "./NumberKeyBoard";
+import { NumberKeyBoard } from "./NumberKeyBoard";
 
 import { insertCharacter, deleteCharacter } from "./character_functions";
 
@@ -69,7 +69,7 @@ const Calculator = () => {
       </div>
       <div>{cursorIndex}</div>
       <div>
-        <NumberKeyboard onClick={enterNKdata} backSpace={backSpace} />
+        <NumberKeyBoard onClick={enterNKdata} backSpace={backSpace} />
         <div>
           <button type="button" onClick={enterData} value="(">
             {"("}
