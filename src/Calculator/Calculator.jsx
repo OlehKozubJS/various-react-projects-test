@@ -71,7 +71,12 @@ const Calculator = () => {
       <div>{cursorIndex}</div>
       <div>
         <div>
-          <button type="button" onClick={enterData} value="1">
+          <button
+            type="button"
+            onClick={enterData}
+            value="1"
+            className={css.CalculatorButton}
+          >
             1
           </button>
           <button type="button" onClick={enterData} value="2">
