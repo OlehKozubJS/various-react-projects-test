@@ -24,7 +24,7 @@ const Calculator = () => {
 
   const enterNKdata = (value) => {
     setResult("");
-    setCharacter(value);
+    setExpression(insertCharacter(cursorIndex, value));
   };
 
   const calculate = () => {
