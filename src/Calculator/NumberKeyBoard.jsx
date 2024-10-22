@@ -7,7 +7,7 @@ const NumberKeyboard = ({ onClick, backSpace }) => {
 
   return (
     <div>
-      {["1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "0"].map((item) => {
+      {"123456789.0".split("").map((item) => {
         return (
           <CalculatorButton key={item} onClick={enterData}>
             {item}
