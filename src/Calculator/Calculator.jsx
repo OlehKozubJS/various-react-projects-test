@@ -104,10 +104,10 @@ const Calculator = () => {
             C
           </button>
           <button type="button" onClick={turnCursorLeft}>
-            ▲►▼◄←↑→↓
+            ←
           </button>
           <button type="button" onClick={turnCursorRight}>
-            Right
+            →
           </button>
         </div>
       </div>
