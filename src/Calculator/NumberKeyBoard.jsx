@@ -11,7 +11,7 @@ const NumberKeyBoard = ({ onClick, backSpace }) => {
     <div className={css.NumberKeyBoard}>
       {"123456789.0".split("").map((item) => {
         return (
-          <CalculatorButton key={item} onClick={enterData}>
+          <CalculatorButton key={item} onClick={enterData} style="NumberButton">
             {item}
           </CalculatorButton>
         );
