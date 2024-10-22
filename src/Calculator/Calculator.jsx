@@ -54,7 +54,7 @@ const Calculator = () => {
   };
 
   const turnCursorRight = () => {
-    if (cursorIndex < expression.length || cursorIndex === 0) {
+    if (cursorIndex < expression.length) {
       setCursorIndex(cursorIndex + 1);
     }
   };
