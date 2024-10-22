@@ -6,7 +6,7 @@ const CalculatorButton = ({ onClick, children, style }) => {
       type="button"
       onClick={onClick}
       value={children}
-      className={`${css.CalculatorButton} ${css.style}`}
+      className={`${css.CalculatorButton} ${css[style]}`}
     >
       {children}
     </button>
