@@ -9,13 +9,12 @@ const MainControlsKeyBoard = ({ onClick, backSpace }) => {
 
   return (
     <div className={`${css.KeyBoard} ${css.ActionsKeyBoard}`}>
-      {"(+)*-/".split("").map((item) => {
-        return (
-          <CalculatorButton key={item} onClick={enterData} style="ActionButton">
-            {item}
-          </CalculatorButton>
-        );
-      })}
+      <CalculatorButton onClick={calculate}>=</CalculatorButton>
+      <CalculatorButton onClick={turnCursorUp}>↑</CalculatorButton>
+      <CalculatorButton onClick={clear}>C</CalculatorButton>
+      <CalculatorButton onClick={turnCursorLeft}>←</CalculatorButton>
+      <CalculatorButton onClick={turnCursorRight}>→</CalculatorButton>
+      <CalculatorButton onClick={turnCursorDown}>↓</CalculatorButton>
     </div>
   );
 };
