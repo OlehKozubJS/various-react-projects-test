@@ -43,6 +43,16 @@
   border-left: 5px solid green;
 }
 
+.MainControlButton {
+  border-top: 5px solid red;
+  border-right: 5px solid red;
+}
+
+.MainControlButton:active {
+  border-bottom: 5px solid red;
+  border-left: 5px solid red;
+}
+
 .KeyBoard {
   display: flex;
   flex-wrap: wrap;
