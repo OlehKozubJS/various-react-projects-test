@@ -99,17 +99,18 @@ const Calculator = () => {
       </div>
       <div>
         <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
+        <div>
+          <ActionsKeyBoard onClick={enterData} />
 
-        <ActionsKeyBoard onClick={enterData} />
-
-        <MainControlsKeyBoard
-          calculate={calculate}
-          turnCursorUp={turnCursorUp}
-          clear={clear}
-          turnCursorLeft={turnCursorLeft}
-          turnCursorDown={turnCursorDown}
-          turnCursorRight={turnCursorRight}
-        />
+          <MainControlsKeyBoard
+            calculate={calculate}
+            turnCursorUp={turnCursorUp}
+            clear={clear}
+            turnCursorLeft={turnCursorLeft}
+            turnCursorDown={turnCursorDown}
+            turnCursorRight={turnCursorRight}
+          />
+        </div>
       </div>
     </div>
   );
