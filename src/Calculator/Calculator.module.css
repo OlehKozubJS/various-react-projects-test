@@ -68,7 +68,12 @@
   align-content: space-evenly;
 }
 
-.NumberKeyBoard {
+.CalculatorKeyBoard {
+  width: 390px;
+}
+
+.NumberKeyBoard,
+.CommonKeyBoard {
   height: 250px;
   width: 190px;
 }
