@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
 
+:root {
+  --calculator-button-border-color: white;
+  --number-button-border-color: blue;
+  --action-button-border-color: green;
+  --control-button-border-color: red;
+}
+
 .Calculator,
 .CalculatorButton {
   font-family: "Turret Road", sans-serif;
@@ -14,44 +21,44 @@
   height: 50px;
   width: 50px;
 
-  border-bottom: 5px solid white;
-  border-left: 5px solid white;
+  border-bottom: 5px solid var(--calculator-button-border-color);
+  border-left: 5px solid var(--calculator-button-border-color);
   background: none;
 }
 
 .CalculatorButton:active {
-  border-top: 5px solid white;
-  border-right: 5px solid white;
+  border-top: 5px solid var(--calculator-button-border-color);
+  border-right: 5px solid var(--calculator-button-border-color);
 }
 
 .NumberButton {
-  border-top: 5px solid blue;
-  border-right: 5px solid blue;
+  border-top: 5px solid var(--number-button-border-color);
+  border-right: 5px solid var(--number-button-border-color);
 }
 
 .NumberButton:active {
-  border-bottom: 5px solid blue;
-  border-left: 5px solid blue;
+  border-bottom: 5px solid var(--number-button-border-color);
+  border-left: 5px solid var(--number-button-border-color);
 }
 
 .ActionButton {
-  border-top: 5px solid green;
-  border-right: 5px solid green;
+  border-top: 5px solid var(--action-button-border-color);
+  border-right: 5px solid var(--action-button-border-color);
 }
 
 .ActionButton:active {
-  border-bottom: 5px solid green;
-  border-left: 5px solid green;
+  border-bottom: 5px solid var(--action-button-border-color);
+  border-left: 5px solid var(--action-button-border-color);
 }
 
 .MainControlButton {
-  border-top: 5px solid red;
-  border-right: 5px solid red;
+  border-top: 5px solid var(--control-button-border-color);
+  border-right: 5px solid var(--control-button-border-color);
 }
 
 .MainControlButton:active {
-  border-bottom: 5px solid red;
-  border-left: 5px solid red;
+  border-bottom: 5px solid var(--control-button-border-color);
+  border-left: 5px solid var(--control-button-border-color);
 }
 
 .KeyBoard {
