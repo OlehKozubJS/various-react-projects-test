@@ -91,7 +91,7 @@ const Calculator = () => {
   }, [expression, cursorIndex, result]);
 
   return (
-    <>
+    <div className={css.Calculator}>
       <div>
         {finalExpression.map((finalExpressionString) => {
           return <p>{finalExpressionString}</p>;
@@ -112,7 +112,7 @@ const Calculator = () => {
           turnCursorRight={turnCursorRight}
         />
       </div>
-    </>
+    </div>
   );
 };
 
