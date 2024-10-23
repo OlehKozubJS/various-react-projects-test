@@ -97,7 +97,7 @@ const Calculator = () => {
           return <p>{finalExpressionString}</p>;
         })}
       </div>
-      <div className={css.KeyBoard}>
+      <div className={css.CalculatorKeyBoard}>
         <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
         <div className={css.CommonKeyBoard}>
           <ActionsKeyBoard onClick={enterData} />
