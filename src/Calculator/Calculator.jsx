@@ -97,7 +97,6 @@ const Calculator = () => {
           return <p>{finalExpressionString}</p>;
         })}
       </div>
-      <div>{cursorIndex}</div>
       <div>
         <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
 
