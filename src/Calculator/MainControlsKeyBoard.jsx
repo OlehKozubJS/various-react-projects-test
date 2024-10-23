@@ -24,11 +24,11 @@ const MainControlsKeyBoard = ({
       <CalculatorButton onClick={turnCursorLeft} style="MainControlButton">
         ←
       </CalculatorButton>
-      <CalculatorButton onClick={turnCursorRight} style="MainControlButton">
-        →
-      </CalculatorButton>
       <CalculatorButton onClick={turnCursorDown} style="MainControlButton">
         ↓
+      </CalculatorButton>
+      <CalculatorButton onClick={turnCursorRight} style="MainControlButton">
+        →
       </CalculatorButton>
     </div>
   );
