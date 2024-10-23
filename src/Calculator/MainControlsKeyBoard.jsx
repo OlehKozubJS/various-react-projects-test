@@ -12,12 +12,24 @@ const MainControlsKeyBoard = ({
 }) => {
   return (
     <div className={`${css.KeyBoard} ${css.ActionsKeyBoard}`}>
-      <CalculatorButton onClick={calculate}>=</CalculatorButton>
-      <CalculatorButton onClick={turnCursorUp}>↑</CalculatorButton>
-      <CalculatorButton onClick={clear}>C</CalculatorButton>
-      <CalculatorButton onClick={turnCursorLeft}>←</CalculatorButton>
-      <CalculatorButton onClick={turnCursorRight}>→</CalculatorButton>
-      <CalculatorButton onClick={turnCursorDown}>↓</CalculatorButton>
+      <CalculatorButton onClick={calculate} style="MainControlButton">
+        =
+      </CalculatorButton>
+      <CalculatorButton onClick={turnCursorUp} style="MainControlButton">
+        ↑
+      </CalculatorButton>
+      <CalculatorButton onClick={clear} style="MainControlButton">
+        C
+      </CalculatorButton>
+      <CalculatorButton onClick={turnCursorLeft} style="MainControlButton">
+        ←
+      </CalculatorButton>
+      <CalculatorButton onClick={turnCursorRight} style="MainControlButton">
+        →
+      </CalculatorButton>
+      <CalculatorButton onClick={turnCursorDown} style="MainControlButton">
+        ↓
+      </CalculatorButton>
     </div>
   );
 };
