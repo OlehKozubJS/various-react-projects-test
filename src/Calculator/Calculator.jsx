@@ -103,6 +103,13 @@ const Calculator = () => {
           <button type="button" onClick={turnCursorRight}>
             →
           </button>
+
+          <button type="button" onClick={turnCursorUp}>
+            ↑
+          </button>
+          <button type="button" onClick={turnCursorDown}>
+            ↓
+          </button>
         </div>
       </div>
     </>
