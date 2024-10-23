@@ -2,11 +2,14 @@ import { CalculatorButton } from "./CalculatorButton";
 
 import css from "./Calculator.module.css";
 
-const MainControlsKeyBoard = ({ onClick, backSpace }) => {
-  const enterData = (event) => {
-    onClick(event.target.value);
-  };
-
+const MainControlsKeyBoard = ({
+  calculate,
+  turnCursorUp,
+  clear,
+  turnCursorLeft,
+  turnCursorDown,
+  turnCursorRight,
+}) => {
   return (
     <div className={`${css.KeyBoard} ${css.ActionsKeyBoard}`}>
       <CalculatorButton onClick={calculate}>=</CalculatorButton>
