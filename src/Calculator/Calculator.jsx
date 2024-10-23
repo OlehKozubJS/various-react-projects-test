@@ -4,6 +4,7 @@ import { insertCharacter, deleteCharacter } from "./character_functions";
 
 import { NumberKeyBoard } from "./NumberKeyBoard";
 import { ActionsKeyBoard } from "./ActionsKeyBoard";
+import { MainControlsKeyBoard } from "./MainControlsKeyBoard";
 
 import css from "./Calculator.module.css";
 
@@ -102,26 +103,14 @@ const Calculator = () => {
 
         <ActionsKeyBoard onClick={enterData} />
 
-        <div>
-          <button type="button" onClick={calculate}>
-            =
-          </button>
-          <button type="button" onClick={turnCursorUp}>
-            ↑
-          </button>
-          <button type="button" onClick={clear}>
-            C
-          </button>
-          <button type="button" onClick={turnCursorLeft}>
-            ←
-          </button>
-          <button type="button" onClick={turnCursorRight}>
-            →
-          </button>
-          <button type="button" onClick={turnCursorDown}>
-            ↓
-          </button>
-        </div>
+        <MainControlsKeyBoard
+          calculate={calculate}
+          turnCursorUp={turnCursorUp}
+          clear={clear}
+          turnCursorLeft={turnCursorLeft}
+          turnCursorDown={turnCursorDown}
+          turnCursorRight={turnCursorRight}
+        />
       </div>
     </>
   );
