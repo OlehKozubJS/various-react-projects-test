@@ -51,6 +51,18 @@ const Calculator = () => {
     }
   };
 
+  const turnCursorUp = () => {
+    if (!result && cursorIndex - 10 >= 0) {
+      setCursorIndex(cursorIndex - 10);
+    }
+  };
+
+  const turnCursorDown = () => {
+    if (!result && cursorIndex + 10 <= expression.length) {
+      setCursorIndex(cursorIndex + 10);
+    }
+  };
+
   useEffect(() => {
     const newExpression = insertCharacter(
       expression,
