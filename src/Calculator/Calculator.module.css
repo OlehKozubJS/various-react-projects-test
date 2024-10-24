@@ -34,15 +34,11 @@
   transition: 250ms;
 }
 
-.CalculatorButton:active {
-  border-top: 5px solid var(--calculator-button-border-color);
-  border-right: 5px solid var(--calculator-button-border-color);
-}
 .NumberButton {
   border-top-color: rgb(200, 200, 250);
   border-right-color: rgb(200, 200, 250);
   border-bottom-color: var(--number-button-border-color);
-  border-left-color: 5px solid var(--number-button-border-color);
+  border-left-color: var(--number-button-border-color);
   background-color: rgb(150, 150, 250);
 }
 
@@ -52,10 +48,10 @@
 }
 
 .NumberButton:active {
-  border-top-color: 5px solid var(--number-button-border-color);
-  border-right-color: 5px solid var(--number-button-border-color);
-  border-bottom-color: 5px solid rgb(200, 200, 250);
-  border-left-color: 5px solid rgb(200, 200, 250);
+  border-top-color: var(--number-button-border-color);
+  border-right-color: var(--number-button-border-color);
+  border-bottom-color: rgb(200, 200, 250);
+  border-left-color: rgb(200, 200, 250);
 }
 
 .ActionButton {
