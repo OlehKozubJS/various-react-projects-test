@@ -27,9 +27,13 @@ const CalculatorDisplay = ({ expression, cursorIndex, result }) => {
 
   return (
     <div className={css.CalculatorDisplay}>
-      {finalExpressionArray.map((finalExpressionString) => {
-        return <p key={finalExpressionString}>{finalExpressionString}</p>;
-      })}
+      {finalExpressionArray.map(
+        (finalExpressionString, finalExpressionStringIndex) => {
+          return (
+            <p key={finalExpressionStringIndex}>{finalExpressionString}</p>
+          );
+        }
+      )}
     </div>
   );
 };
