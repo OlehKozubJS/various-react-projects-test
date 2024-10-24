@@ -94,7 +94,7 @@ const Calculator = () => {
     <div className={css.Calculator}>
       <div>
         {finalExpression.map((finalExpressionString) => {
-          return <p>{finalExpressionString}</p>;
+          return <p key={finalExpressionString}>{finalExpressionString}</p>;
         })}
       </div>
       <div className={`${css.KeyBoard} ${css.CalculatorKeyBoard}`}>
