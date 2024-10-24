@@ -70,12 +70,13 @@
 }
 
 .CalculatorKeyBoard {
-  width: 400px;
+  height: 250px;
+  width: 410px;
 }
 
 .NumberKeyBoard,
 .CommonKeyBoard {
-  height: 250px;
+  height: 230px;
   width: 190px;
 }
 
