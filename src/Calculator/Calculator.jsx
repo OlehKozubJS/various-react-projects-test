@@ -5,6 +5,7 @@ import { insertCharacter, deleteCharacter } from "./character_functions";
 import { NumberKeyBoard } from "./NumberKeyBoard";
 import { ActionsKeyBoard } from "./ActionsKeyBoard";
 import { MainControlsKeyBoard } from "./MainControlsKeyBoard";
+import { CalculatorDisplay } from "./CalculatorDisplay";
 
 import css from "./Calculator.module.css";
 
@@ -99,6 +100,11 @@ const Calculator = () => {
       </div>
       <div className={`${css.KeyBoard} ${css.CalculatorKeyBoard}`}>
         <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
+        <CalculatorDisplay
+          expression={expression}
+          cursorIndex={cursorIndex}
+          result={result}
+        />
         <div className={`${css.KeyBoard} ${css.CommonKeyBoard}`}>
           <ActionsKeyBoard onClick={enterData} />
 
