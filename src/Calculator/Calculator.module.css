@@ -15,6 +15,11 @@
   color: blue;
 }
 
+.CalculatorDisplay {
+  height: 250px;
+  width: 410px;
+}
+
 .CalculatorButton {
   display: block;
 
