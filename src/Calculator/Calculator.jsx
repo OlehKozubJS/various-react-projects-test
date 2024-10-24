@@ -54,13 +54,13 @@ const Calculator = () => {
 
   const turnCursorUp = () => {
     if (!result && cursorIndex - 20 >= 0) {
-      setCursorIndex(cursorIndex - 20);
+      setCursorIndex(cursorIndex - 22);
     }
   };
 
   const turnCursorDown = () => {
     if (!result && cursorIndex + 20 <= expression.length) {
-      setCursorIndex(cursorIndex + 20);
+      setCursorIndex(cursorIndex + 22);
     }
   };
 
