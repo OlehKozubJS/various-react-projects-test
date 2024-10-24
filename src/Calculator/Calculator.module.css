@@ -18,6 +18,7 @@
 .CalculatorDisplay {
   height: 250px;
   width: 410px;
+  background-color: aqua;
 }
 
 .CalculatorButton {
