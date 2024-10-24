@@ -2,9 +2,9 @@
 
 :root {
   --calculator-button-border-color: white;
-  --number-button-border-color: blue;
-  --action-button-border-color: green;
-  --control-button-border-color: red;
+  --number-button-border-color: rgb(0, 0, 250);
+  --action-button-border-color: rgb(0, 250, 0);
+  --control-button-border-color: rgb(250, 0, 0);
 }
 
 .Calculator,
