@@ -47,8 +47,8 @@
 .NumberButton {
   border-top-color: rgb(200, 200, 250);
   border-right-color: rgb(200, 200, 250);
-  border-bottom-color: var(--number-button-border-color);
-  border-left-color: var(--number-button-border-color);
+  border-bottom-color: rgb(150, 150, 150);
+  border-left-color: rgb(150, 150, 150);
   background-color: rgb(150, 150, 250);
 }
 
