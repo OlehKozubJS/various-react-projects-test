@@ -12,7 +12,6 @@ import css from "./Calculator.module.css";
 const Calculator = () => {
   const [expression, setExpression] = useState("");
   const [result, setResult] = useState("");
-  const [finalExpression, setFinalExpression] = useState([]);
   const [cursorIndex, setCursorIndex] = useState(0);
 
   const enterData = (value) => {
@@ -64,32 +63,6 @@ const Calculator = () => {
       setCursorIndex(cursorIndex + 20);
     }
   };
-
-  useEffect(() => {
-    const newExpression = insertCharacter(
-      expression,
-      cursorIndex,
-      result ? "" : "_"
-    );
-
-    let finalExpressionArray = [];
-    let finalExpressionString = "";
-    for (let character of newExpression) {
-      finalExpressionString += character;
-      if (finalExpressionString.length === 20) {
-        finalExpressionArray = [...finalExpressionArray, finalExpressionString];
-        finalExpressionString = "";
-      }
-    }
-
-    finalExpressionArray = [
-      ...finalExpressionArray,
-      finalExpressionString,
-      result,
-    ];
-
-    setFinalExpression(finalExpressionArray);
-  }, [expression, cursorIndex, result]);
 
   return (
     <div className={css.Calculator}>
