@@ -12,11 +12,12 @@ const CalculatorDisplay = ({ expression, cursorIndex, result }) => {
   let finalExpressionArray = [];
   let finalExpressionString = "";
   for (let character of newExpression) {
-    if (finalExpressionString.length === 24) {
+    if (finalExpressionString.length === 22) {
       finalExpressionArray = [...finalExpressionArray, finalExpressionString];
       finalExpressionString = "";
     }
     finalExpressionString += character;
+    console.log(finalExpressionString.length);
   }
 
   finalExpressionArray = [
