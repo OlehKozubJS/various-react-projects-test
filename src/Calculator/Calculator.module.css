@@ -38,12 +38,11 @@
   border-top: 5px solid var(--calculator-button-border-color);
   border-right: 5px solid var(--calculator-button-border-color);
 }
-
 .NumberButton {
-  border-top: 5px solid var(--number-button-border-color);
-  border-right: 5px solid var(--number-button-border-color);
-  border-bottom: 5px solid rgb(200, 200, 250);
-  border-left: 5px solid rgb(200, 200, 250);
+  border-top: 5px solid rgb(200, 200, 250);
+  border-right: 5px solid rgb(200, 200, 250);
+  border-bottom: 5px solid var(--number-button-border-color);
+  border-left: 5px solid var(--number-button-border-color);
   background-color: rgb(150, 150, 250);
 }
 
@@ -53,10 +52,10 @@
 }
 
 .NumberButton:active {
-  border-top: 5px solid rgb(200, 200, 250);
-  border-right: 5px solid rgb(200, 200, 250);
-  border-bottom: 5px solid var(--number-button-border-color);
-  border-left: 5px solid var(--number-button-border-color);
+  border-top: 5px solid var(--number-button-border-color);
+  border-right: 5px solid var(--number-button-border-color);
+  border-bottom: 5px solid rgb(200, 200, 250);
+  border-left: 5px solid rgb(200, 200, 250);
 }
 
 .ActionButton {
@@ -99,7 +98,7 @@
   justify-content: center;
   align-content: center;
   gap: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(200, 200, 200);
 }
 
 .CalculatorKeyBoard {
