@@ -25,8 +25,6 @@ const CalculatorDisplay = ({ expression, cursorIndex, result }) => {
     result,
   ];
 
-  setFinalExpression(finalExpressionArray);
-
   return (
     <div className={css.CalculatorDisplay}>
       {finalExpressionArray.map((finalExpressionString) => {
