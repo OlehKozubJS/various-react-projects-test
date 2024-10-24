@@ -79,18 +79,23 @@
 }
 
 .MainControlButton {
-  border-top: 5px solid var(--control-button-border-color);
-  border-right: 5px solid var(--control-button-border-color);
+  border-top-color: rgb(250, 200, 200);
+  border-right-color: rgb(250, 200, 200);
+  border-bottom-color: var(--control-button-border-color);
+  border-left-color: var(--control-button-border-color);
+  background-color: rgb(250, 150, 150);
 }
 
 .MainControlButton:hover,
 .MainControlButton:focus {
-  background-color: rgb(250, 150, 150);
+  background-color: rgb(250, 175, 175);
 }
 
 .MainControlButton:active {
-  border-bottom: 5px solid var(--control-button-border-color);
-  border-left: 5px solid var(--control-button-border-color);
+  border-top-color: var(--control-button-border-color);
+  border-right-color: var(--control-button-border-color);
+  border-bottom-color: rgb(250, 200, 200);
+  border-left-color: rgb(250, 200, 200);
 }
 
 .KeyBoard {
