@@ -1,5 +1,7 @@
 import { insertCharacter } from "./character_functions";
 
+import css from "./Calculator.module.css";
+
 const CalculatorDisplay = ({ expression, cursorIndex, result }) => {
   const newExpression = insertCharacter(
     expression,
