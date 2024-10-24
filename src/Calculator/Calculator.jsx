@@ -97,14 +97,15 @@ const Calculator = () => {
         {finalExpression.map((finalExpressionString) => {
           return <p key={finalExpressionString}>{finalExpressionString}</p>;
         })}
-      </div>
+      </div>{" "}
+      <CalculatorDisplay
+        expression={expression}
+        cursorIndex={cursorIndex}
+        result={result}
+      />
       <div className={`${css.KeyBoard} ${css.CalculatorKeyBoard}`}>
         <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
-        <CalculatorDisplay
-          expression={expression}
-          cursorIndex={cursorIndex}
-          result={result}
-        />
+
         <div className={`${css.KeyBoard} ${css.CommonKeyBoard}`}>
           <ActionsKeyBoard onClick={enterData} />
 
