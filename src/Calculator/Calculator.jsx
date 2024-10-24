@@ -93,11 +93,6 @@ const Calculator = () => {
 
   return (
     <div className={css.Calculator}>
-      <div>
-        {finalExpression.map((finalExpressionString) => {
-          return <p key={finalExpressionString}>{finalExpressionString}</p>;
-        })}
-      </div>{" "}
       <CalculatorDisplay
         expression={expression}
         cursorIndex={cursorIndex}
