@@ -64,12 +64,13 @@
 .KeyBoard {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
 
 .CalculatorKeyBoard {
-  width: 390px;
+  width: 400px;
 }
 
 .NumberKeyBoard,
@@ -79,6 +80,6 @@
 }
 
 .ActionsKeyBoard {
-  height: 130px;
+  height: 110px;
   width: 190px;
 }
