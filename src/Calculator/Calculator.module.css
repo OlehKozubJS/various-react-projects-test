@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
 
 :root {
-  --number-button-border-color: rgb(0, 0, 250);
-  --action-button-border-color: rgb(0, 250, 0);
-  --control-button-border-color: rgb(250, 0, 0);
+  --number-button-background-color: rgb(150, 150, 250);
+  --number-button-background-color-hover: rgb(175, 175, 250);
+  --action-button-background-color: rgb(150, 250, 150);
+  --action-button-background-color-hover: rgb(175, 250, 175);
+  --control-button-background-color: rgb(250, 150, 150);
+  --control-button-background-color-hover: rgb(250, 175, 175);
   --calculator-button-border-width: 3px;
 }
 
@@ -44,45 +47,45 @@
 }
 
 .NumberButton {
-  background-color: rgb(150, 150, 250);
+  background-color: var(--number-button-background-color);
 }
 
 .NumberButton:hover,
 .NumberButton:focus {
-  background-color: rgb(175, 175, 250);
+  background-color: var(--number-button-background-color-hover);
 }
 
 .NumberButton:not(:hover),
 .NumberButton:not(:focus) {
-  background-color: rgb(150, 150, 250);
+  background-color: var(--number-button-background-color);
 }
 
 .ActionButton {
-  background-color: rgb(150, 250, 150);
+  background-color: var(--action-button-background-color);
 }
 
 .ActionButton:hover,
 .ActionButton:focus {
-  background-color: rgb(175, 250, 175);
+  background-color: var(--action-button-background-color-hover);
 }
 
 .ActionButton:not(:hover),
 .ActionButton:not(:focus) {
-  background-color: rgb(150, 250, 150);
+  background-color: var(--action-button-background-color);
 }
 
 .MainControlButton {
-  background-color: rgb(250, 150, 150);
+  background-color: var(--control-button-background-color);
 }
 
 .MainControlButton:hover,
 .MainControlButton:focus {
-  background-color: rgb(250, 175, 175);
+  background-color: var(--control-button-background-color-hover);
 }
 
 .MainControlButton:not(:hover),
 .MainControlButton:not(:focus) {
-  background-color: rgb(250, 150, 150);
+  background-color: var(--control-button-background-color);
 }
 
 .KeyBoard {
