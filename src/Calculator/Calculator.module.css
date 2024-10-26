@@ -80,6 +80,11 @@
   background-color: rgb(250, 175, 175);
 }
 
+.MainControlButton:not(:hover),
+.MainControlButton:not(:focus) {
+  background-color: rgb(250, 150, 150);
+}
+
 .KeyBoard {
   display: flex;
   flex-wrap: wrap;
