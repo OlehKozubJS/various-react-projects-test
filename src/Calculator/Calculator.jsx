@@ -35,6 +35,9 @@ const Calculator = () => {
   };
 
   const backSpace = () => {
+    if (result) {
+      return;
+    }
     setExpression(deleteCharacter(expression, cursorIndex - 1));
     if (cursorIndex > 0) {
       setCursorIndex(cursorIndex - 1);
