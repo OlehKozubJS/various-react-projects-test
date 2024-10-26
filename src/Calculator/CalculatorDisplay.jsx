@@ -17,7 +17,6 @@ const CalculatorDisplay = ({ expression, cursorIndex, result }) => {
       finalExpressionString = "";
     }
     finalExpressionString += character;
-    console.log(finalExpressionString.length);
   }
 
   finalExpressionArray = [
