@@ -21,22 +21,23 @@ const Calculator = () => {
   };
 
   const calculate = () => {
-    try {
-      setResult("=" + eval(expression));
-      setCursorIndex(expression.length);
-    } catch (error) {
-      setResult(String(error));
+    if (result) {
+      setResult("");
+    } else {
+      try {
+        setResult("=" + eval(expression));
+      } catch (error) {
+        setResult(String(error));
+      } finally {
+        setCursorIndex(expression.length);
+      }
     }
   };
 
   const backSpace = () => {
-    if (result) {
-      setResult("");
-    } else {
-      setExpression(deleteCharacter(expression, cursorIndex - 1));
-      if (cursorIndex > 0) {
-        setCursorIndex(cursorIndex - 1);
-      }
+    setExpression(deleteCharacter(expression, cursorIndex - 1));
+    if (cursorIndex > 0) {
+      setCursorIndex(cursorIndex - 1);
     }
   };
 
