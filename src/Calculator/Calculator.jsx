@@ -51,8 +51,8 @@ const Calculator = () => {
     <div className={css.Calculator}>
       <CalculatorDisplay
         expression={expression}
-        cursorIndex={cursorIndex}
         result={result}
+        cursorIndex={cursorIndex}
       />
       <div className={`${css.KeyBoard} ${css.CalculatorKeyBoard}`}>
         <NumberKeyBoard onClick={enterData} backSpace={backSpace} />
