@@ -4,6 +4,7 @@ import css from "./Calculator.module.css";
 
 const MainControlsKeyBoard = ({
   calculate,
+  expression,
   cursorIndex,
   turnCursor,
   clear,
