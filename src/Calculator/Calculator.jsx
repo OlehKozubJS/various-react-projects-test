@@ -30,7 +30,9 @@ const Calculator = () => {
       setResult("");
     } else {
       setExpression(deleteCharacter(expression, cursorIndex - 1));
-      setCursorIndex(cursorIndex - 1);
+      if (cursorIndex > 0) {
+        setCursorIndex(cursorIndex - 1);
+      }
     }
   };
 
