@@ -9,25 +9,25 @@ const MainControlsKeyBoard = ({
   clear,
 }) => {
   const turnCursorLeft = () => {
-    if (!result && cursorIndex > 0) {
+    if (cursorIndex > 0) {
       turnCursor(cursorIndex - 1);
     }
   };
 
   const turnCursorRight = () => {
-    if (!result && cursorIndex < expression.length) {
+    if (cursorIndex < expression.length) {
       turnCursor(cursorIndex + 1);
     }
   };
 
   const turnCursorUp = () => {
-    if (!result && cursorIndex - 20 >= 0) {
+    if (cursorIndex - 20 >= 0) {
       turnCursor(cursorIndex - 22);
     }
   };
 
   const turnCursorDown = () => {
-    if (!result && cursorIndex + 20 <= expression.length) {
+    if (cursorIndex + 20 <= expression.length) {
       turnCursor(cursorIndex + 22);
     }
   };
