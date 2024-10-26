@@ -10,6 +10,30 @@ const MainControlsKeyBoard = ({
   turnCursorDown,
   turnCursorRight,
 }) => {
+  const turnCursorLeft = () => {
+    if (!result && cursorIndex > 0) {
+      setCursorIndex(cursorIndex - 1);
+    }
+  };
+
+  const turnCursorRight = () => {
+    if (!result && cursorIndex < expression.length) {
+      setCursorIndex(cursorIndex + 1);
+    }
+  };
+
+  const turnCursorUp = () => {
+    if (!result && cursorIndex - 20 >= 0) {
+      setCursorIndex(cursorIndex - 22);
+    }
+  };
+
+  const turnCursorDown = () => {
+    if (!result && cursorIndex + 20 <= expression.length) {
+      setCursorIndex(cursorIndex + 22);
+    }
+  };
+
   return (
     <div className={`${css.KeyBoard} ${css.ActionsKeyBoard}`}>
       <CalculatorButton onClick={calculate} style="MainControlButton">
