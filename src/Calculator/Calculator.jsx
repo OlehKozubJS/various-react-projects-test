@@ -62,6 +62,7 @@ const Calculator = () => {
 
           <MainControlsKeyBoard
             calculate={calculate}
+            expression={expression}
             cursorIndex={cursorIndex}
             turnCursor={turnCursor}
             clear={clear}
