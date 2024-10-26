@@ -21,8 +21,12 @@ const Calculator = () => {
   };
 
   const calculate = () => {
-    setResult("=" + eval(expression));
-    setCursorIndex(expression.length);
+    try {
+      setResult("=" + eval(expression));
+      setCursorIndex(expression.length);
+    } catch (error) {
+      setResult(error + "");
+    }
   };
 
   const backSpace = () => {
