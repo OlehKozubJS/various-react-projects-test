@@ -4,33 +4,31 @@ import css from "./Calculator.module.css";
 
 const MainControlsKeyBoard = ({
   calculate,
-  turnCursorUp,
+  cursorIndex,
+  turnCursor,
   clear,
-  turnCursorLeft,
-  turnCursorDown,
-  turnCursorRight,
 }) => {
   const turnCursorLeft = () => {
     if (!result && cursorIndex > 0) {
-      setCursorIndex(cursorIndex - 1);
+      turnCursor(cursorIndex - 1);
     }
   };
 
   const turnCursorRight = () => {
     if (!result && cursorIndex < expression.length) {
-      setCursorIndex(cursorIndex + 1);
+      turnCursor(cursorIndex + 1);
     }
   };
 
   const turnCursorUp = () => {
     if (!result && cursorIndex - 20 >= 0) {
-      setCursorIndex(cursorIndex - 22);
+      turnCursor(cursorIndex - 22);
     }
   };
 
   const turnCursorDown = () => {
     if (!result && cursorIndex + 20 <= expression.length) {
-      setCursorIndex(cursorIndex + 22);
+      turnCursor(cursorIndex + 22);
     }
   };
 
