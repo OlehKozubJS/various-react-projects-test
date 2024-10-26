@@ -40,28 +40,8 @@ const Calculator = () => {
     setCursorIndex(0);
   };
 
-  const turnCursorLeft = () => {
-    if (!result && cursorIndex > 0) {
-      setCursorIndex(cursorIndex - 1);
-    }
-  };
-
-  const turnCursorRight = () => {
-    if (!result && cursorIndex < expression.length) {
-      setCursorIndex(cursorIndex + 1);
-    }
-  };
-
-  const turnCursorUp = () => {
-    if (!result && cursorIndex - 20 >= 0) {
-      setCursorIndex(cursorIndex - 22);
-    }
-  };
-
-  const turnCursorDown = () => {
-    if (!result && cursorIndex + 20 <= expression.length) {
-      setCursorIndex(cursorIndex + 22);
-    }
+  const turnCursor = (newCursorIndex) => {
+    setCursorIndex(newCursorIndex);
   };
 
   return (
@@ -79,11 +59,9 @@ const Calculator = () => {
 
           <MainControlsKeyBoard
             calculate={calculate}
-            turnCursorUp={turnCursorUp}
+            cursorIndex={cursorIndex}
+            turnCursor={turnCursor}
             clear={clear}
-            turnCursorLeft={turnCursorLeft}
-            turnCursorDown={turnCursorDown}
-            turnCursorRight={turnCursorRight}
           />
         </div>
       </div>
