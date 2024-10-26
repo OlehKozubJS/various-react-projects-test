@@ -30,7 +30,7 @@ const Calculator = () => {
       setResult("");
     } else {
       setExpression(deleteCharacter(expression, cursorIndex - 1));
-      turnCursorLeft();
+      setCursorIndex(cursorIndex - 1);
     }
   };
 
