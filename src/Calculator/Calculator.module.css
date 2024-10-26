@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
 
 :root {
-  --calculator-button-border-color: white;
   --number-button-border-color: rgb(0, 0, 250);
   --action-button-border-color: rgb(0, 250, 0);
   --control-button-border-color: rgb(250, 0, 0);
+  --calculator-button-border-width: 3px;
 }
 
 .Calculator,
@@ -28,8 +28,8 @@
   width: 50px;
 
   border-style: solid;
-  border-top-width: 2px;
-  border-right-width: 2px;
+  border-top-width: var(--calculator-button-border-width);
+  border-right-width: var(--calculator-button-border-width);
   border-bottom-width: 0px;
   border-left-width: 0px;
   border-color: white;
@@ -38,8 +38,8 @@
 .CalculatorButton:active {
   border-top-width: 0px;
   border-right-width: 0px;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
+  border-bottom-width: var(--calculator-button-border-width);
+  border-left-width: var(--calculator-button-border-width);
   border-color: black;
 }
 
