@@ -41,6 +41,9 @@ const Calculator = () => {
   };
 
   const turnCursor = (newCursorIndex) => {
+    if (result) {
+      return;
+    }
     setCursorIndex(newCursorIndex);
   };
 
