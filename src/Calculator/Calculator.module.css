@@ -52,6 +52,11 @@
   background-color: rgb(175, 175, 250);
 }
 
+.NumberButton:not(:hover),
+.NumberButton:not(:focus) {
+  background-color: rgb(150, 150, 250);
+}
+
 .ActionButton {
   background-color: rgb(150, 250, 150);
 }
@@ -59,6 +64,11 @@
 .ActionButton:hover,
 .ActionButton:focus {
   background-color: rgb(175, 250, 175);
+}
+
+.ActionButton:not(:hover),
+.ActionButton:not(:focus) {
+  background-color: rgb(150, 250, 150);
 }
 
 .MainControlButton {
