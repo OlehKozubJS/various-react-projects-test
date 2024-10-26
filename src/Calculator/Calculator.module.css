@@ -28,27 +28,22 @@
   width: 50px;
 
   border-style: solid;
-  border-top-width: 1px;
-  border-right-width: 1px;
+  border-top-width: 2px;
+  border-right-width: 2px;
   border-bottom-width: 0px;
   border-left-width: 0px;
-  background: none;
-
-  transition: 250ms;
+  border-color: white;
 }
 
 .CalculatorButton:active {
   border-top-width: 0px;
   border-right-width: 0px;
-  border-bottom-width: 5px;
-  border-left-width: 5px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-color: black;
 }
 
 .NumberButton {
-  border-top-color: rgb(200, 200, 250);
-  border-right-color: rgb(200, 200, 250);
-  border-bottom-color: rgb(150, 150, 150);
-  border-left-color: rgb(150, 150, 150);
   background-color: rgb(150, 150, 250);
 }
 
@@ -57,18 +52,7 @@
   background-color: rgb(175, 175, 250);
 }
 
-.NumberButton:active {
-  border-top-color: rgb(200, 200, 250);
-  border-right-color: rgb(200, 200, 250);
-  border-bottom-color: rgb(150, 150, 150);
-  border-left-color: rgb(150, 150, 150);
-}
-
 .ActionButton {
-  border-top-color: rgb(200, 250, 200);
-  border-right-color: rgb(200, 250, 200);
-  border-bottom-color: var(--action-button-border-color);
-  border-left-color: var(--action-button-border-color);
   background-color: rgb(150, 250, 150);
 }
 
@@ -77,31 +61,13 @@
   background-color: rgb(175, 250, 175);
 }
 
-.ActionButton:active {
-  border-top: 5px solid var(--action-button-border-color);
-  border-right: 5px solid var(--action-button-border-color);
-  border-bottom: 5px solid rgb(200, 250, 200);
-  border-left: 5px solid rgb(200, 250, 200);
-}
-
 .MainControlButton {
-  border-top-color: rgb(250, 200, 200);
-  border-right-color: rgb(250, 200, 200);
-  border-bottom-color: var(--control-button-border-color);
-  border-left-color: var(--control-button-border-color);
   background-color: rgb(250, 150, 150);
 }
 
 .MainControlButton:hover,
 .MainControlButton:focus {
   background-color: rgb(250, 175, 175);
-}
-
-.MainControlButton:active {
-  border-top-color: var(--control-button-border-color);
-  border-right-color: var(--control-button-border-color);
-  border-bottom-color: rgb(250, 200, 200);
-  border-left-color: rgb(250, 200, 200);
 }
 
 .KeyBoard {
