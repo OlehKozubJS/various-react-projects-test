@@ -25,7 +25,7 @@ const Calculator = () => {
       setResult("=" + eval(expression));
       setCursorIndex(expression.length);
     } catch (error) {
-      setResult(error + "");
+      setResult(String(error));
     }
   };
 
