@@ -16,7 +16,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
-    "glob": "^10.5.0"
+    "glob": "^10.5.0",
+    "form-data": ">=3.0.4"
   },
   "browserslist": {
     "production": [
